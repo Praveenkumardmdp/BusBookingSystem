@@ -1,0 +1,79 @@
+﻿@model BusBookingApp.bus.Login
+@{
+    ViewBag.pageTitle="Login";
+    Layout=null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aspire Bus Booking - @ViewBag.pageTitle</title>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="~/css/mainLogin.css">
+    <style>
+        span{
+            /* text-align: center; */
+            color: crimson;
+            font-size: 12px;
+        }
+        .text-danger{
+            display: block;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <header><strong>Aspire Bus</strong></header>
+    </div>
+	<main class="main">
+		<div class="login">
+			<h3>Login</h3>
+			<form action="~/Client/loginuser" method="post">
+                <div class="input">
+                    <label class="label" for="username">Username</label>
+				    <input type="text" id="username" name="username" required>
+                    @* @Html.ValidationMessageFor(model => model.username, "", new { @class = "text-danger" }) *@
+                    @* <span class="text-danger" asp-validation-for="username"></span> *@
+                </div>
+                <div class="input">
+                    <label class="label" for="password">Password</label>
+				    <input type="password" id="password" name="password" required>
+                    @* @Html.ValidationMessageFor(model => model.password, "", new { @class = "text-danger" }) *@
+                    @* <span class="text-danger" asp-validation-for="password"></span> *@
+                </div>
+                <input type="checkbox" id="checkbox" name="checkbox" onclick="togglePasswordVisibility()">
+                <label for="checkbox">Show password</label>
+				<div class="button">
+                    <button  type="submit" class="button">Login</button>
+                </div>
+                @Html.ValidationSummary(false, "", new { @class = "text-danger" })
+            </form>
+            <p><a asp-controller="Client" asp-action="Forgotview">Forget password</a></p>
+			<p>Don't have an account? <a asp-controller="Client" asp-action="Register">Register</a></p>
+		</div>
+	</main>
+    <div class="footer">
+        <footer >
+            <div>© 2023 Aspire Bus Booking System. All rights reserved.</div>
+        </footer>
+    </div>
+
+    <script>
+        function togglePasswordVisibility() {
+            const passwordInput = document.getElementById("password");
+
+            if (passwordInput.type === "password") {
+                passwordInput.type = "text";
+            } else {
+                passwordInput.type = "password";
+            }
+        }
+    </script>
+	
+</body>
+</html>
+@section Scripts{
+	<partial name="_ValidationScriptsPartial" />
+} 

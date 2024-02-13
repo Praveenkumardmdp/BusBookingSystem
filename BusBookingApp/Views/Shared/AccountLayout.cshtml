@@ -1,0 +1,90 @@
+@{
+    Layout =null;
+}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>@ViewData["Title"] - BUS BOOKING WEB</title>
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+        <link rel="stylesheet" href="~/RegisterAndLogin.styles.css" asp-append-version="true" />
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            .container-fluid{
+                background-attachment: fixed;
+                background-color: #333;
+            }
+            .navbar .nav-link {
+                color: #f4edf5 !important;
+                font-weight: bold;
+                font-size:21px;
+            }
+            .navbar .nav-link:hover {
+                border-bottom: solid 6px rgb(237, 232, 238);
+            }
+            .navbar-brand{
+                border-radius: 10mm;
+                border-color: black;
+                background-color: #e4e0e0;
+                padding: 5px 10px;
+                font-weight: bold;
+                font-size: 30px;
+                color: #333;
+            }
+            .new p{
+                margin: auto 5px auto auto;
+            }
+            .footer {
+                background-color: #333;
+                color: #fff;
+                @* padding: 10px 20px; *@
+                bottom: 0%;
+                position: fixed;
+                width: 100%;
+                height: 50px;
+                margin-top: -50px;
+            }
+            .navbar {
+                padding: 0%;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3" style="margin-bottom:0px;">
+            <div class="container-fluid ">  
+                <a class="navbar-brand" asp-area="" asp-controller="Client" asp-action="getHome"><strong>A Bus</strong></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            @* </div>
+            <div class="container-fluid"> *@
+                @* <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between new">
+                    <p>
+                        <a class="nav-link" style="right: 0%;" asp-area="" asp-controller="Client" asp-action="Homepage">Back</a>
+                    </p>
+                </div> *@
+            </div>
+        </nav>
+        </header>
+        <div class="container">
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        </div>
+
+        <div class="footer">
+            <p>© Copyrights 2023 Bus Booking Web  </p>    
+        </div>
+
+        <script src="~/lib/jquery/dist/jquery.min.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+        @await RenderSectionAsync("Scripts", required: false)
+    </body>
+</html>

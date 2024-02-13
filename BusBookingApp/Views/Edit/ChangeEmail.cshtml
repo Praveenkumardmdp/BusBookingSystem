@@ -1,0 +1,48 @@
+@model BusBookingApp.bus.Login
+@{
+    ViewBag.title = "ChangeEmail";
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.title - Bus Booking System</title>
+    <link rel="stylesheet" href="~/css/ChangeEmail.css" type="text/css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <p class="logo"><a href="">Aspire Bus</a></p>
+            <p class="ChangePassword"><a asp-action="ChangePassword" asp-controller="Edit">Change Password</a></p>
+            <p class="ChangePhoneNumber"><a asp-action="ChangePhoneNumber" asp-controller="Edit">Change PhoneNumber</a></p>
+            <p class="ChangeEmail"><a asp-action="ChangeEmail" asp-controller="Edit">Change Email</a></p>
+            <p class="back"><a asp-action="HomePage" asp-controller="Client">Back</a></p>
+        </div>
+    </header>
+    <main>
+        <div class="main">
+            <div class="innerdiv">
+                <h2>Change Email</h2>
+                <form action="~/Edit/ChangeEmail" class="form" method="post">
+                    <label for="userName">UserName</label>
+                    <input type="text"asp-for="userName" id="userName" name="userName">
+                    <span asp-validation-for="userName"></span>
+                    <label for="password">Password</label>
+                    <input type="password" asp-for="password" id="password" name="password" required>
+                    <span asp-validation-for="password"></span>
+                    <label for="email">New Email</label>
+                    <input type="email" id="email" asp-for="email" name="email" required>
+                    <span asp-validation-for="email"></span>
+                    <div class="button"><button>Submit</button></div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="copyrights">© 2023 Aspire Bus Booking System. All rights reserved.</div>
+    </footer>
+</body>
+</html>

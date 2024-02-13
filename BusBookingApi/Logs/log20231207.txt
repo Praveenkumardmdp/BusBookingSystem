@@ -1,0 +1,26 @@
+2023-12-07 20:00:08.337 +05:30 [INF] Now listening on: https://localhost:7088
+2023-12-07 20:00:08.456 +05:30 [INF] Now listening on: http://localhost:5280
+2023-12-07 20:00:08.470 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-07 20:00:08.473 +05:30 [INF] Hosting environment: Development
+2023-12-07 20:00:08.475 +05:30 [INF] Content root path: C:\Users\devi_\Desktop\BBS\BusBookingApi\
+2023-12-07 20:00:30.833 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7088/api/BusDetail - -
+2023-12-07 20:00:31.052 +05:30 [INF] Executing endpoint 'BusBookingApi.Controllers.BusDetailController.TotalBus (BusBookingApi)'
+2023-12-07 20:00:31.115 +05:30 [INF] Route matched with {action = "TotalBus", controller = "BusDetail"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BusBookingApi.Models.BusDetail]]] TotalBus() on controller BusBookingApi.Controllers.BusDetailController (BusBookingApi).
+2023-12-07 20:00:38.040 +05:30 [INF] Executed DbCommand (254ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[serialNo], [b].[Name], [b].[destination], [b].[droptime], [b].[pickupDate], [b].[pickuptime], [b].[registrationNo], [b].[source]
+FROM [busDetails] AS [b]
+2023-12-07 20:00:38.269 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BusBookingApi.Models.BusDetail, BusBookingApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-07 20:00:38.675 +05:30 [INF] Executed action BusBookingApi.Controllers.BusDetailController.TotalBus (BusBookingApi) in 7536.1398ms
+2023-12-07 20:00:38.687 +05:30 [INF] Executed endpoint 'BusBookingApi.Controllers.BusDetailController.TotalBus (BusBookingApi)'
+2023-12-07 20:00:38.738 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7088/api/BusDetail - - - 200 - application/json;+charset=utf-8 7906.1459ms
+2023-12-07 20:22:47.478 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7088/api/BusDetail - -
+2023-12-07 20:22:47.494 +05:30 [INF] Executing endpoint 'BusBookingApi.Controllers.BusDetailController.TotalBus (BusBookingApi)'
+2023-12-07 20:22:47.497 +05:30 [INF] Route matched with {action = "TotalBus", controller = "BusDetail"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BusBookingApi.Models.BusDetail]]] TotalBus() on controller BusBookingApi.Controllers.BusDetailController (BusBookingApi).
+2023-12-07 20:22:49.146 +05:30 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[serialNo], [b].[Name], [b].[destination], [b].[droptime], [b].[pickupDate], [b].[pickuptime], [b].[registrationNo], [b].[source]
+FROM [busDetails] AS [b]
+2023-12-07 20:22:49.154 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BusBookingApi.Models.BusDetail, BusBookingApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-12-07 20:22:49.159 +05:30 [INF] Executed action BusBookingApi.Controllers.BusDetailController.TotalBus (BusBookingApi) in 1659.019ms
+2023-12-07 20:22:49.162 +05:30 [INF] Executed endpoint 'BusBookingApi.Controllers.BusDetailController.TotalBus (BusBookingApi)'
+2023-12-07 20:22:49.164 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7088/api/BusDetail - - - 200 - application/json;+charset=utf-8 1685.8181ms
+2023-12-07 20:28:04.401 +05:30 [INF] Application is shutting down...

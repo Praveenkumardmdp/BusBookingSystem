@@ -1,0 +1,52 @@
+@{
+	Layout=null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Forgot Password</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="~/css/forget.css" type="text/css">
+</head>
+<body>
+	<div class="header">
+        <header>
+            <div class="layout">
+                <p class="logo">Aspire Bus</p>
+                <p class="back"><a asp-action="Login" asp-controller="Home">Back</a></p>
+            </div>
+        </header>
+    </div>
+    <div class="layout1">
+        <div class="mainborder">
+            <div class="mainlayout">
+                <div class="head">
+                    Forgot Password
+                </div>
+                <form action="~/Client/resetpassword" method="post">
+                    <div class="main">
+                        <div class="label">
+                            <label class="mail" for="email">Email Address</label>
+                            <input type="email" name="email" id="email" class="input" required>
+                        </div>
+                        <div class="label">
+                            <label class="password" for="password">New Password</label>
+                            <input type="password" name="password" id="password" class="input" required>
+                        </div>
+                        <div class="button">
+                            <button>Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <p>© Copyrights 2023 Bus Booking Web  </p>
+        </div>
+    </footer>
+</body>
+</html>

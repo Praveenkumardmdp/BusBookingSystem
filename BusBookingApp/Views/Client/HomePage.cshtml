@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Website</title>
+  <style>
+    *{
+      padding:0px;
+      margin:0px;
+      box-sizing: border-box;
+    }
+    body
+     {
+       background-attachment: fixed;
+       background-image: url("https://images.unsplash.com/photo-1520105072000-f44fc083e508?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8YnVzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+       position:center;
+       background-position: center;
+       background-size: cover;  
+       @* width: 100%; *@
+     }
+     .div1{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 400px;
+     }
+     .div1 table td .input{
+      height:45px;
+      width:225px;
+      margin: 0;
+      background-color: white;
+      color: black;
+      @* width: auto; *@
+     }
+     .div1 table td input{
+      height:45px;
+      width:225px;
+      border-radius: 5px;
+      @* margin: 0; *@
+      @* width: auto; *@
+     }
+     input[type=submit]
+     {
+      background-color:rgb(144, 27, 177);
+      color:white;
+     }
+  </style>
+</head>
+<body >
+    <div class="div1">
+        <form method="post" action="~/Client/getsearch">
+          <table>
+            <tr>
+              <td>
+                  @* <input type="text" placeholder="Enter The Source" name="source" required> *@
+                  <select class="input" name="source" id="source" required>
+                        <option value="Null">Enter the Source</option>
+                        <option value="Aspirepremises">Aspirepremises</option>
+                        <option value="Thambaram">Thambaram</option>
+                        <option value="Velachery">Velachery</option>
+                        <option value="NON-AC">Chrompet</option>
+                        <option value="AC">Ambattur</option>
+                  </select>
+              </td>
+              <td>
+                  @* <input type="text" placeholder="Enter The Destination" name="destination" required> *@
+                  <select class="input" name="destination" id="destination" required>
+                        <option value="Null">Enter the Destination</option>
+                        <option value="Aspirepremises">Aspirepremises</option>
+                        <option value="Thambaram">Thambaram</option>
+                        <option value="Velachery">Velachery</option>
+                        <option value="NON-AC">Chrompet</option>
+                        <option value="AC">Ambattur</option>
+                  </select>         
+              </td>
+              <td>            
+                  <input type="date" name="date" required>        
+              </td>
+              <td>
+                  <input type="submit" value="search" >
+              </td>
+            </tr>
+            @* <tr><td><input type="hidden" name="username" value="@ViewBag.username" ></td> @ViewBag.username<td> </td></tr> *@
+          </table>
+        </form>
+    </div>
+</body>
+</html>

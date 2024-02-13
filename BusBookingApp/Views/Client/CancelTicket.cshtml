@@ -1,0 +1,799 @@
+@model IEnumerable<BusName>  
+@{  
+    ViewBag.Title = "busdeselected";  
+}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bus Seat Selection</title>
+	<style type="text/css">
+		.green
+		{
+			width:30px; background-color:green; color:white;
+
+		}
+		.red
+		{
+			width:30px; background-color:gray; color:white;pointer-events: none;
+
+		}
+		#input-green:hover
+		{
+			width: 40px;
+
+		}
+		.line
+		{
+		 float:left;
+		 border-style:solid;
+		 border-width:0 0 0px 5px;
+		 height:500px;
+		 width: 50%;
+		 
+		 
+
+		}
+		.div1
+		{
+			float: left;			
+			width:50%;
+			height:100%;
+		}
+		.div2
+		{
+			display:flex;
+			align-items:center;
+			justify-content: center;
+
+		}
+
+		
+	</style>
+</head>
+<body style="height:500px width:100%">
+	
+
+	<div class="div1">
+		<h1>Bus Seat Cancel Ticket:</h1>
+	<p>Please select  seats to cancel:</p>
+		<form method="post" action="~/Client/selectedseats">
+		<table >
+				 
+			<tr style="width:100%;">
+				<td >
+					
+					 @if(ViewBag.busname._1 == ViewBag.username )
+						{
+							<input type="button" class="green" value="1" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+
+						}
+						else
+						{
+							<input type="button" class="red" value="1" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+						}
+						
+				</td>
+				<td >
+					@if(ViewBag.busname._2 == ViewBag.username)
+						{
+							<input type="button" class="green" value="2" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+
+						}
+						else
+						{
+							<input type="button" class="red" value="2" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+						}
+						
+				</td>
+				<td >
+					 @if(ViewBag.busname._3 == ViewBag.username)
+						{
+							<input type="button" class="green" value="3" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+
+						}
+						else
+						{
+							<input type="button" class="red" value="3" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+						}
+						
+				</td>
+				<td >
+					 @if(ViewBag.busname._4 == ViewBag.username)
+						{
+							<input type="button" class="green" value="4" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+
+						}
+						else
+						{
+							<input type="button" class="red" value="4" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+						}
+						
+				</td>
+				<td >
+					 @if(ViewBag.busname._5 == ViewBag.username)
+						{
+							<input type="button" class="green" value="5" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+
+						}
+						else
+						{
+							<input type="button" class="red" value="5" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+						}
+						
+				</td>
+				<td >
+					 @if(ViewBag.busname._6 == ViewBag.username)
+						{
+							<input type="button" class="green" value="6" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+
+						}
+						else
+						{
+							<input type="button" class="red" value="6" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+						}
+						
+				</td>
+				<td >
+					 @if(ViewBag.busname._7 == ViewBag.username)
+						{
+							<input type="button" class="green" value="7" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+
+						}
+						else
+						{
+							<input type="button" class="red" value="7" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+						}
+						
+				</td>
+				<td >
+					 @if(ViewBag.busname._8 == ViewBag.username)
+						{
+							<input type="button" class="green" value="8" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+
+						}
+						else
+						{
+							<input type="button" class="red" value="8" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+						}
+						
+				</td>
+				<td >
+					 @if(ViewBag.busname._9 == ViewBag.username)
+						{
+							<input type="button" class="green" value="9" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+
+						}
+						else
+						{
+							<input type="button" class="red" value="9" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+						}
+						
+				</td>
+				<td >
+					 @if(ViewBag.busname._10 == ViewBag.username)
+						{
+							<input type="button" class="green" value="10" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+
+						}
+						else
+						{
+							<input type="button" class="red" value="10" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+						}
+						
+				</td>				
+               
+
+			</tr>
+			<tr>
+				<td >
+					 @if(ViewBag.busname._11 == ViewBag.username)
+						{
+							<input type="button" class="green" value="11" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+
+						}
+						else
+						{
+							<input type="button" class="red" value="11" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+						}
+						
+				</td>
+				<td >
+					@if(ViewBag.busname._12 == ViewBag.username)
+						{
+							<input type="button" class="green" value="12" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+
+						}
+						else
+						{
+							<input type="button" class="red" value="12" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+						}
+						
+				</td>
+				<td >
+					 @if(ViewBag.busname._13 == ViewBag.username)
+						{
+							<input type="button" class="green" value="13" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+
+						}
+						else
+						{
+							<input type="button" class="red" value="13" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+						}
+						
+				</td>
+				<td >
+					 @if(ViewBag.busname._14 == ViewBag.username)
+						{
+							<input type="button" class="green" value="14" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+
+						}
+						else
+						{
+							<input type="button" class="red" value="14" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+						}
+						
+				</td>
+				<td >
+					 @if(ViewBag.busname._15 == ViewBag.username)
+						{
+							<input type="button" class="green" value="15" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+
+						}
+						else
+						{
+							<input type="button" class="red" value="15" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+						}
+						
+				</td>
+				<td >
+					 @if(ViewBag.busname._16 == ViewBag.username)
+						{
+							<input type="button" class="green" value="16" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+
+						}
+						else
+						{
+							<input type="button" class="red" value="16" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+						}
+						
+				</td>
+				<td >
+					 @if(ViewBag.busname._17 == ViewBag.username)
+						{
+							<input type="button" class="green" value="17" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+
+						}
+						else
+						{
+							<input type="button" class="red" value="17" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+						}
+						
+				</td>
+				<td >
+					 @if(ViewBag.busname._18 == ViewBag.username)
+						{
+							<input type="button" class="green" value="18" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+
+						}
+						else
+						{
+							<input type="button" class="red" value="18" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+						}
+						
+				</td>
+				<td >
+					 @if(ViewBag.busname._19 == ViewBag.username)
+						{
+							<input type="button" class="green" value="19" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+
+						}
+						else
+						{
+							<input type="button" class="red" value="19" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+						}
+						
+				</td>
+				<td >
+					 @if(ViewBag.busname._20 == ViewBag.username)
+						{
+							<input type="button" class="green" value="20" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+
+						}
+						else
+						{
+							<input type="button" class="red" value="20" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+						}
+						
+				</td>		
+			</tr>
+			<tr>
+				<td >
+					 @if(ViewBag.busname._21 == ViewBag.username)
+						{
+							<input type="button" class="green" value="21" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+
+						}
+						else
+						{
+							<input type="button" class="red" value="21" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+						}
+						
+				</td>
+				<td >
+					 @if(ViewBag.busname._22 == ViewBag.username)
+						{
+							<input type="button" class="green" value="22" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+
+						}
+						else
+						{
+							<input type="button" class="red" value="22" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+						}
+						
+				</td>
+			</tr>
+			<tr>
+				<td >
+					 @if(ViewBag.busname._23 == ViewBag.username)
+						{
+							<input type="button" class="green" value="23" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+
+						}
+						else
+						{
+							<input type="button" class="red" value="23" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+						}
+						
+				</td>
+				<td >
+					 @if(ViewBag.busname._24 == ViewBag.username)
+						{
+							<input type="button" class="green" value="24" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+
+						}
+						else
+						{
+							<input type="button" class="red" value="24" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+						}
+						
+				</td>
+				<td>
+
+				</td>
+				<td>
+					
+				</td>
+				<td>
+					
+				</td>
+				<td>
+					
+				</td>
+				<td>
+					
+				</td>
+				<td>
+					
+				</td>
+				<td>
+					
+				</td>
+				<td>
+					
+				</td>
+			</tr>
+			<tr>
+				<td >
+					 @if(ViewBag.busname._25 == ViewBag.username)
+						{
+							<input type="button" class="green" value="25" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+
+						}
+						else
+						{
+							<input type="button" class="red" value="25" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+						}
+						
+				</td>
+				<td >
+					@if(ViewBag.busname._26== ViewBag.username)
+						{
+							<input type="button" class="green" value="26" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+
+						}
+						else
+						{
+							<input type="button" class="red" value="26" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+						}
+						
+				</td>
+				<td >
+					 @if(ViewBag.busname._27 == ViewBag.username)
+						{
+							<input type="button" class="green" value="27" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+
+						}
+						else
+						{
+							<input type="button" class="red" value="28" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+						}
+						
+				</td>
+				<td >
+					 @if(ViewBag.busname._28 == ViewBag.username)
+						{
+							<input type="button" class="green" value="28" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+
+						}
+						else
+						{
+							<input type="button" class="red" value="28" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+						}
+						
+				</td>
+				<td >
+					 @if(ViewBag.busname._29 == ViewBag.username)
+						{
+							<input type="button" class="green" value="29" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+
+						}
+						else
+						{
+							<input type="button" class="red" value="29" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+						}
+						
+				</td>
+				<td >
+					 @if(ViewBag.busname._30 == ViewBag.username)
+						{
+							<input type="button" class="green" value="30" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+
+						}
+						else
+						{
+							<input type="button" class="red" value="30" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+						}
+						
+				</td>
+				<td >
+					 @if(ViewBag.busname._31== ViewBag.username)
+						{
+							<input type="button" class="green" value="31" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+
+						}
+						else
+						{
+							<input type="button" class="red" value="31" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+						}
+						
+				</td>
+				<td >
+					 @if(ViewBag.busname._32== ViewBag.username)
+						{
+							<input type="button" class="green" value="32" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+
+						}
+						else
+						{
+							<input type="button" class="red" value="32" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+						}
+						
+				</td>
+				<td >
+					 @if(ViewBag.busname._33 == ViewBag.username)
+						{
+							<input type="button" class="green" value="33" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+
+						}
+						else
+						{
+							<input type="button" class="red" value="33" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+						}
+						
+				</td>
+				<td >
+					 @if(ViewBag.busname._34 == ViewBag.username)
+						{
+							<input type="button" class="green" value="34" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+
+						}
+						else
+						{
+							<input type="button" class="red" value="34" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+						}
+						
+				</td>		
+			</tr>
+			<tr>
+				<td >
+					 @if(ViewBag.busname._35 == ViewBag.username)
+						{
+							<input type="button" class="green" value="35" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+
+						}
+						else
+						{
+							<input type="button" class="red" value="35" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+						}
+						
+				</td>
+				<td >
+					@if(ViewBag.busname._36 == ViewBag.username)
+						{
+							<input type="button" class="green" value="36" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+
+						}
+						else
+						{
+							<input type="button" class="red" value="36" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+						}
+						
+				</td>
+				<td >
+					 @if(ViewBag.busname._37 == ViewBag.username)
+						{
+							<input type="button" class="green" value="37" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+
+						}
+						else
+						{
+							<input type="button" class="red" value="37" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+						}
+						
+				</td>
+				<td >
+					 @if(ViewBag.busname._38 == ViewBag.username)
+						{
+							<input type="button" class="green" value="38" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+
+						}
+						else
+						{
+							<input type="button" class="red" value="38" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+						}
+						
+				</td>
+				<td >
+					 @if(ViewBag.busname._39== ViewBag.username)
+						{
+							<input type="button" class="green" value="39" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+
+						}
+						else
+						{
+							<input type="button" class="red" value="39" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+						}
+						
+				</td>
+				<td >
+					 @if(ViewBag.busname._40 == ViewBag.username)
+						{
+							<input type="button" class="green" value="40" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+
+						}
+						else
+						{
+							<input type="button" class="red" value="40" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+						}
+						
+				</td>
+				<td >
+					 @if(ViewBag.busname._41 == ViewBag.username)
+						{
+							<input type="button" class="green" value="41" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+
+						}
+						else
+						{
+							<input type="button" class="red" value="41" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+						}
+						
+				</td>
+				<td >
+					 @if(ViewBag.busname._42 == ViewBag.username)
+						{
+							<input type="button" class="green" value="42" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+
+						}
+						else
+						{
+							<input type="button" class="red" value="42" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+						}
+						
+				</td>
+				<td >
+					 @if(ViewBag.busname._43 == ViewBag.username)
+						{
+							<input type="button" class="green" value="43" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+
+						}
+						else
+						{
+							<input type="button" class="red" value="43" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+						}
+						
+				</td>
+				<td >
+					 @if(ViewBag.busname._44 == ViewBag.username)
+						{
+							<input type="button" class="green" value="44" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+
+						}
+						else
+						{
+							<input type="button" class="red" value="44" data-original-value="5" data-value="0" onclick="toggleButton(this)" />
+                            <input type="hidden" name="buttonvalues" value="0" data-original-value="5" />
+						}
+						
+				</td>	
+					
+			</tr>
+		
+		<tr>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td><input type="hidden" name="sno" value=@ViewBag.sno /> </td>
+			<td><input type="hidden" name="type" value="cancel" />  </td>
+			<td><input type="hidden" name="busNumber" value=@ViewBag.BusName.busNumber /> 
+			</td>
+
+			<td><input style="margin-top:30px; background-color:violet;" type="submit" value=" Cancel Ticket "/></td></td>
+		</tr>
+		</table>
+		</form>			 
+		
+		</div>
+
+	</div>
+	<div class="line" >
+		<div class="div2">
+			<table>
+				
+				<tr>
+					<td><strong>Bus No </strong> </td>
+					<td  ><strong >&nbsp;:&nbsp; </strong> </td>
+					<td> @ViewBag.BusName.busNumber</td>
+				</tr>
+				<tr>
+					<td><strong>Bus Name </strong> </td>
+					<td  ><strong >&nbsp;:&nbsp; </strong> </td>
+					<td> @ViewBag.BusName.busName</td>
+				</tr>
+				<tr>
+					<td><strong>Pickup place </strong> </td>
+					<td><strong> &nbsp;:&nbsp; </strong> </td>
+					<td>@ViewBag.BusName.pickupplace </td>
+				</tr>
+				<tr>
+					<td><strong>Pickup Date </strong> </td>
+					<td><strong>&nbsp;:&nbsp;</strong> </td>
+					<td>@ViewBag.BusName.pickupDate.ToString("dd-MM-yyyy")</td>
+				</tr>
+				<tr>
+					<td> <strong>Pickup Time </strong></td>
+					<td><strong>&nbsp;:&nbsp;</strong> </td>
+					<td> @ViewBag.BusName.pickuptime</td>
+				</tr>
+				<tr>
+					<td> <strong>Destination </strong></td>
+					<td><strong>&nbsp;:&nbsp;</strong> </td>
+					<td> @ViewBag.BusName.dropplace  </td>
+				</tr>
+
+								
+			</table>	  		
+		</div>			
+		
+		
+	</div>
+	<script>
+function toggleButton(button) 
+{
+    if (button.getAttribute('data-value') === '0') {
+        button.setAttribute('data-value', button.getAttribute('data-original-value'));
+        button.style.backgroundColor = 'black';
+        button.nextElementSibling.value = button.getAttribute('value');
+		
+    } else {
+        button.setAttribute('data-value', '0');
+        button.style.backgroundColor = 'darkgreen';
+        button.nextElementSibling.value = 0;
+    }
+}
+    
+</script>
+
+	
+
+</body>

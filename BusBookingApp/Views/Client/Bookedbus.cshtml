@@ -1,0 +1,64 @@
+ 
+ @model  List<User>
+
+@{
+  ViewData["Title"] = "BookedBus";
+}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+         *
+          {
+            padding:0px;
+            margin:0px;
+            box-sizing: border-box;
+          }
+          .bus-box
+          {
+            padding:10px;
+            border-style:solid;
+            border-color:rgb(114, 17, 123);
+            border-width: 5px;
+            position: center;
+            margin-bottom: 5px;
+            
+            
+          }
+          .input{
+            
+            background-color: rgb(114, 17, 123);
+            color: white;
+            border:none;
+            margin-left:20px;
+            text-decoration:none;
+          }
+          
+
+        </style>
+    </head>
+    <body >
+      <form method="post" action="~/Client/CancelTicket">
+         @foreach(var list in ViewBag.Bookings)
+        {
+          @if (list.seatno != "")
+          {
+            <div class="bus-box">
+                <p >@list.busname @list.registrationno - @list.seatno</p>
+                <p ><strong>Source:</strong>@list.source <strong>Time:</strong>@list.pickuptime  </p>
+                <p ><strong>Destination: </strong> @list.destination <strong>Drop Time: </strong>@list.droptime</p>                
+                <input type="hidden" name="bus" value=@list.registrationno   >
+                <input type="hidden" name="sno" value=@list.sno  >
+                <input class="input"  type="submit" value="CancelSeat" name="seat"> <a class="input" href="@Url.Action( "PrintTicket","Client", new { ticketId = @list.sno })">Download Ticket</a>
+            </div>
+          }
+          else
+          {
+            continue;
+          }
+        }
+      </form>
+       
+    </body>
+</html>

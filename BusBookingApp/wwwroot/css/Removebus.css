@@ -1,0 +1,87 @@
+body{
+    background: url("https://images.unsplash.com/photo-1520105072000-f44fc083e508?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8YnVzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
+    /* height: 100vh; */
+    margin: 0%; 
+}
+.header{
+    background-color: black;
+    margin: 0%;
+}
+.layout{
+    display: flex;
+    flex: 1;
+}
+.layout1{
+    margin: auto auto auto 0px;
+    font-size: 15px;
+}
+.layout select{
+    width: 150px;
+    color: whitesmoke;
+    background-color: transparent;
+    font-size:20px ;
+    border-color: transparent;
+    font-weight: bold;
+}
+
+.layout option{
+    color: black;
+    font-size: 15px;
+}
+
+.table{
+    padding: 5px;
+}
+.thead th{
+    padding: 10px 25px;
+    border-bottom: 2px solid black;
+}
+.tbody td{
+    padding: 10px 30px;
+    border-bottom: 2px;
+}
+.mainlayout1{
+    /* display: flex; */
+    /* border: 1px solid black; */
+    margin: 0px;
+}
+.mainlayout1 .content{
+    margin: 10px 10px 10px 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px 5px;
+    background-color: white;
+    background:linear-gradient(to right,rgb(243, 185, 185),rgb(245, 99, 99),rgb(245, 18, 18));
+}
+select{
+    width: 442px;
+    height: 35px;
+    padding: 5px 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.mainlayout1 .btn{
+    text-align: right;
+    padding: 0px;
+}
+.mainlayout1 .btn a{
+    display: inline;
+    padding: 5px;
+    background-color: antiquewhite;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 2px;
+    text-decoration: none;
+    color: black;
+    width: 100px;
+    cursor: pointer;
+}
+
+@media (min-width : 810px){
+    /* .mainlayout1 .content{
+        padding-right: 55%;
+    } */
+}

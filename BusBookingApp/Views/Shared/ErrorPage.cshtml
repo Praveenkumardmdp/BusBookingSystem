@@ -1,0 +1,20 @@
+@{
+    ViewData["Title"] = "ErrorView";
+    Layout = null;
+}
+
+<style>
+    div{
+        text-align: center;
+    }
+    div h1,h2{
+        text-decoration: dotted;
+        color: red;
+    }
+</style>
+<div>
+    <div>
+        <h1 class="text-danger">Error.</h1>
+        <h2 class="text-danger">@ViewBag.Error</h2>
+    </div>
+</div>

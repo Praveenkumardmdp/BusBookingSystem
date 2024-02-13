@@ -1,0 +1,46 @@
+@{
+    ViewData["Title"]="User Bookings";
+    Layout=null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - @ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/bookings.css" type="text/css">
+    <style>
+         *{
+            padding:0px;
+            margin:0px;
+            box-sizing: border-box;
+          }
+          .bus-box{
+            padding:10px;
+            border-style:solid;
+            border-color:rgb(114, 17, 123);
+            border-width: 5px;
+            position: center;
+            margin-bottom: 5px;
+          }
+          .input{
+            background-color: rgb(114, 17, 123);
+            color: white;
+            border:none;
+            margin-left:20px;
+            text-decoration:none;
+          }
+          </style>
+</head>
+<body>
+    <div class="bookings">
+        <div class="bus-box">
+            <p >@*@list.busname @list.registrationno - @list.seatno*@</p>
+            <p ><strong>Source:</strong>@*@list.source*@ <strong>Time:</strong>@*@list.pickuptime  *@</p>
+            <p ><strong>Destination: </strong>@* @list.destination*@ <strong>Drop Time: </strong>@*@list.droptime*@</p>                
+            <input type="hidden" name="bus" value= @*@list.registrationno*@    >
+            <input type="hidden" name="sno" value= @*@list.sno*@  ></div>
+    </div>
+</body>
+</html>

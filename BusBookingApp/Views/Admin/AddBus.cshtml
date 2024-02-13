@@ -1,0 +1,107 @@
+@model BusBookingApp.bus.BusDetail
+@{
+    ViewData["Title"]="AddBus";
+    Layout= null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - @ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/Addbus.css" type="text/css">
+</head>
+<body>
+    <div class="header">
+        <header>
+            <div class="layout">
+                <p class="layout1">
+                    <select onchange="location = this.value;" >
+                        <option selected>Manage</option>
+                        <option value="https://localhost:7128/Admin/AddBus">Add Bus</option>
+                        <option value="https://localhost:7128/Admin/totalBus">Remove Bus</option>
+                    </select>
+                </p>
+                <p class="layout2">
+                    <select onchange="location = this.value;" >
+                        <option selected >Admin</option>
+                        <option value="https://localhost:7128/Admin/UserProfiles">User Profiles</option>
+                        <option value="https://localhost:7128/Client/Logout" >Logout</option>                
+                    </select>
+                </p>
+            </div>
+        </header>
+    </div>
+    <div class="main">
+        <form action="~/Admin/InsertBus" method="post">
+            <div class="form">
+                <h2>Bus Details</h2>
+                <div class="form-group">
+                    <label class="label" for="Name">Bus Name</label>
+                    <input type="text" id="Name" name="Name" class="input" asp-for="Name" required>
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label class="label" for="registrationNo">Bus Number</label>
+                    <input type="text" id="registrationNo" name="registrationNo" class="input" asp-for="registrationNo" required>
+                    <span asp-validation-for="registrationNo" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label class="label" for="source">Source</label>
+                    <input type="text" id="source" asp-for="source" name="source" class="input" required>
+                    <span asp-validation-for="source" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label class="label" for="destination">Destination</label>
+                    <input type="text" id="destination" asp-for="destination" name="destination" class="input" required>
+                    <span asp-validation-for="destination" class="text-danger"></span>
+                </div>
+                @* <div class="form-group">
+                    <label class="label" for="busfare">Bus Fare</label>
+                    <input type="number" id="busfare" asp-for="busfare" name="busfare" class="input" required>
+                    <span asp-validation-for="busfare" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label class="label" for="bustype">Bus Type</label>
+                    <!-- <input type="text" id="bustype" class="input" required> -->
+                    <select name="bustype" id="bustype" asp-for="bustype">
+                        <option value="Null">Select</option>
+                        <option value="AC">AC</option>
+                        <option value="NON-AC">NON-AC</option>
+                    </select>
+                    <span asp-validation-for="bustype" class="text-danger"></span>
+                </div> *@
+                
+                <div class="form-group">
+                    <label class="label" for="pickupDate">Pickup Date</label>
+                    <input type="date" id="pickupDate" name="pickupDate" class="input" asp-for="pickupDate" required>
+                    <span asp-validation-for="pickupDate" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label class="label" for="pickuptime">Pickup Time</label>
+                    <input type="time" id="pickuptime" name="pickuptime" asp-for="pickuptime" class="input" required>
+                    <span asp-validation-for="pickuptime" class="text-danger"></span>
+                </div>
+                @* <div class="form-group">
+                    <label class="label" for="dropDate">Drop Date</label>
+                    <input type="date" id="dropDate" name="dropDate" class="input" asp-for="dropDate" required>
+                    <span asp-validation-for="dropDate" class="text-danger"></span>
+                </div> *@
+                <div class="form-group">
+                    <label class="label" for="droptime">Drop Time</label>
+                    <input type="time" id="droptime" name="droptime" class="input" asp-for="droptime" required>
+                    <span asp-validation-for="droptime" class="text-danger"></span>
+                </div>
+                <div>
+                    <button class="Button" type="submit">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+
+@section Scripts{
+	<partial name="_ValidationScriptsPartial" />
+}   

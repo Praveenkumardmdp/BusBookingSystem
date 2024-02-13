@@ -1,0 +1,71 @@
+@model List<BusBookingApp.bus.Login>
+@{
+    ViewBag.Title = "User Profiles";
+    Layout=null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="~/css/UserDetails.css" type="text/css">
+</head>
+<body>
+    <div class="header">
+        <header>
+            <div class="layout">
+                <p class="layout1">
+                    <select onchange="location = this.value;" >
+                        <option selected>Manage</option>
+                        <option value="https://localhost:7128/Admin/AddBus">Add Bus</option>
+                        <option value="https://localhost:7128/Admin/totalBus">Remove Bus</option>
+                    </select>
+                </p>
+                <p class="layout2">
+                    <select onchange="location = this.value;" >
+                        <option selected >Admin</option>
+                        <option value="https://localhost:7128/Admin/UserProfiles">Users Profiles</option>
+                        <option value="https://localhost:7128/Client/Logout" >Logout</option>                
+                    </select>
+                </p>
+            </div>
+        </header>
+    </div>
+    <div class="main1">
+        <div class="main">
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="7" style="text-align: center;"><h2>User Details</h2></th>
+                    </tr>
+                    <tr>
+                        <th>Username</th>
+                        <th>Phone Number</th>
+                        <th>Email</th>
+                        <th>Password</th>
+                        <th>Bookings</th>
+                        @* <th>Seat Booked</th> *@
+                        <th>Edit/Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.userName</td>
+                            <td>@item.phonenumber</td>
+                            <td>@item.email</td>
+                            <td>@item.password</td>
+                            @* <td><a asp-route-name="@item.email" asp-action="Bookings" asp-controller="Admin">Bookings</a></td> *@
+                            @* <td>//</td> *@
+                            <td><a href=""> Delete</a></td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+@model  List<BusBookingApp.bus.Login>
+@{
+    ViewBag.Title = "MyAccount";
+    Layout ="AccountLayout";
+}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>@ViewBag.Title - BUS BOOKING WEB</title>
+        <style>
+            .header{
+                color: black;
+                text-decoration: double;
+                text-align: center;
+                border: 2px solid black;
+                background-color:  white;
+                padding: auto;
+            }
+            table,th,td {
+                border: 2px solid black;
+                border-collapse: collapse;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            table{
+                width: 100%;
+            }
+            th,td{
+                text-align: center;
+                padding-top: 10px;
+                padding-bottom: 20px;
+                padding-left: 30px;
+                padding-right: 40px;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <div class="Account">
+                <table>
+                    <tr class="header">
+                        <th colspan="2">
+                            <div>
+                                <strong>ACCOUNT DETAILS</strong>
+                            </div> 
+                        </th>
+                    </tr>
+                    @foreach (var List in Model)
+                    {
+                    <tr>
+                        <th><strong> Id </strong></th>
+                        <td>@List.serialNo</td>
+                    </tr>
+                    <tr>
+                        <th><strong> Name </strong></th>
+                        <td>@List.userName</td>
+                    </tr>
+                    <tr>
+                        <th><strong> Email </strong></th>
+                        <td>@List.email</td>
+                    </tr>
+                    <tr>
+                        <th><strong> Phone Number </strong></th>
+                        <td>@List.phonenumber</td>
+                    </tr>    
+                    }
+                </table>
+            </div>
+        </main>
+    </body>
+</html>

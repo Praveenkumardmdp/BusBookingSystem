@@ -1,0 +1,54 @@
+﻿@{
+    ViewBag.Title="Bus Booking System";
+    Layout=null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Booking System</title>
+    <link rel="stylesheet" href="~/css/mainIndex.css" type="text/css">
+</head>
+<body>
+    <div class="header">
+        <header> <strong>Aspire Bus</strong></header>
+    </div>
+    <main class="main">
+        <div class="maintext">
+            <div class="tagline1">
+                Welcome to Aspire Bus Booking System
+            </div>
+            <div class="tagline2">
+                Book your bus tickets online and save time and money
+            </div>
+            <form>
+                <button asp-action="Login" asp-controller="Home">LOGIN</button>
+            </form>            
+        </div>
+    </main>
+        <div class="contents">
+            <div class="content1">
+                <h3>Easy Booking</h3>
+                <p><b>Book your tickets in just a few clicks</b></p>
+                <b><p>Traveling by bus is a chance to disconnect from the world and connect with yourself. Take that chance.</p></b>
+            </div>
+            <div class="content2">
+                <h3>Secure Payment</h3>
+                    <b><p>Your payment information is safe with us</p>
+                    <p>Your trust is our top priority</p></b>
+            </div>
+            <div class="content3">
+                <h3>24/7 Customer Support</h3>
+                    <b><p>Our customer support team is always available to help you</p>
+                    <p>Customer support is not a 9 to 5 job. We're here for you 24/7, no matter what.</p></b>
+            </div>
+        </div>
+    <div class="footer">
+        <footer>
+            <div class="footer">© 2023 Aspire Bus Booking System. All rights reserved.</div>
+        </footer>
+    </div>
+</body>
+</html>

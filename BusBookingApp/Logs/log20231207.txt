@@ -1,0 +1,209 @@
+2023-12-07 19:56:03.832 +05:30 [INF] User profile is available. Using 'C:\Users\devi_\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-12-07 19:56:04.830 +05:30 [INF] Now listening on: https://localhost:7128
+2023-12-07 19:56:04.831 +05:30 [INF] Now listening on: http://localhost:5105
+2023-12-07 19:56:04.837 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-07 19:56:04.837 +05:30 [INF] Hosting environment: Development
+2023-12-07 19:56:04.838 +05:30 [INF] Content root path: C:\Users\devi_\Desktop\BBS\BusBookingApp\
+2023-12-07 19:56:45.517 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7128/ - -
+2023-12-07 19:56:45.735 +05:30 [INF] Executing endpoint 'BusBookingApp.Controllers.HomeController.Index (BusBookingApp)'
+2023-12-07 19:56:45.878 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller BusBookingApp.Controllers.HomeController (BusBookingApp).
+2023-12-07 19:56:46.032 +05:30 [INF] Executing ViewResult, running view Index.
+2023-12-07 19:56:47.426 +05:30 [INF] Executed ViewResult - view Index executed in 1450.5126ms.
+2023-12-07 19:56:47.476 +05:30 [INF] Executed action BusBookingApp.Controllers.HomeController.Index (BusBookingApp) in 1583.992ms
+2023-12-07 19:56:47.477 +05:30 [INF] Executed endpoint 'BusBookingApp.Controllers.HomeController.Index (BusBookingApp)'
+2023-12-07 19:56:47.511 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7128/ - - - 200 - text/html;+charset=utf-8 1997.5423ms
+2023-12-07 19:56:47.616 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7128/css/mainIndex.css - -
+2023-12-07 19:56:47.616 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7128/_framework/aspnetcore-browser-refresh.js - -
+2023-12-07 19:56:47.625 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7128/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 9.5278ms
+2023-12-07 19:56:47.932 +05:30 [INF] Sending file. Request path: '/css/mainIndex.css'. Physical path: 'C:\Users\devi_\Desktop\BBS\BusBookingApp\wwwroot\css\mainIndex.css'
+2023-12-07 19:56:47.939 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7128/css/mainIndex.css - - - 200 1900 text/css 322.7441ms
+2023-12-07 19:56:48.280 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7128/favicon.ico - -
+2023-12-07 19:56:48.328 +05:30 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\Users\devi_\Desktop\BBS\BusBookingApp\wwwroot\favicon.ico'
+2023-12-07 19:56:48.328 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7128/favicon.ico - - - 200 5430 image/x-icon 47.6235ms
+2023-12-07 19:56:52.227 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7128/Home/Login? - -
+2023-12-07 19:56:52.229 +05:30 [INF] Executing endpoint 'BusBookingApp.Controllers.HomeController.Login (BusBookingApp)'
+2023-12-07 19:56:52.231 +05:30 [INF] Route matched with {action = "Login", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller BusBookingApp.Controllers.HomeController (BusBookingApp).
+2023-12-07 19:56:52.233 +05:30 [INF] Executing ViewResult, running view Login.
+2023-12-07 19:56:52.642 +05:30 [INF] Executed ViewResult - view Login executed in 410.7829ms.
+2023-12-07 19:56:52.643 +05:30 [INF] Executed action BusBookingApp.Controllers.HomeController.Login (BusBookingApp) in 412.0267ms
+2023-12-07 19:56:52.643 +05:30 [INF] Executed endpoint 'BusBookingApp.Controllers.HomeController.Login (BusBookingApp)'
+2023-12-07 19:56:52.645 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7128/Home/Login? - - - 200 - text/html;+charset=utf-8 417.7789ms
+2023-12-07 19:56:52.705 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7128/_framework/aspnetcore-browser-refresh.js - -
+2023-12-07 19:56:52.705 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7128/css/mainLogin.css - -
+2023-12-07 19:56:52.706 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7128/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 0.7827ms
+2023-12-07 19:56:52.800 +05:30 [INF] Sending file. Request path: '/css/mainLogin.css'. Physical path: 'C:\Users\devi_\Desktop\BBS\BusBookingApp\wwwroot\css\mainLogin.css'
+2023-12-07 19:56:52.801 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7128/css/mainLogin.css - - - 200 2055 text/css 95.4746ms
+2023-12-07 19:58:33.501 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7128/Client/loginuser application/x-www-form-urlencoded 230
+2023-12-07 19:58:33.503 +05:30 [INF] Executing endpoint 'ClientController.loginuser (BusBookingApp)'
+2023-12-07 19:58:33.504 +05:30 [INF] Route matched with {action = "loginuser", controller = "Client"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult loginuser() on controller ClientController (BusBookingApp).
+2023-12-07 19:58:34.453 +05:30 [INF] Executing RedirectResult, redirecting to /Admin/AddBus.
+2023-12-07 19:58:34.454 +05:30 [INF] Executed action ClientController.loginuser (BusBookingApp) in 949.6695ms
+2023-12-07 19:58:34.454 +05:30 [INF] Executed endpoint 'ClientController.loginuser (BusBookingApp)'
+2023-12-07 19:58:34.458 +05:30 [INF] Session started; Key:5d3be320-f45e-ef3c-f98a-2c52d4d4303b, Id:f00cbfea-71ea-057f-6c48-8223c987b75a
+2023-12-07 19:58:34.471 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7128/Client/loginuser application/x-www-form-urlencoded 230 - 302 0 - 970.5237ms
+2023-12-07 19:58:34.479 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7128/Admin/AddBus - -
+2023-12-07 19:58:34.482 +05:30 [INF] Executing endpoint 'BusBookingWeb.Controllers.AdminController.AddBus (BusBookingApp)'
+2023-12-07 19:58:34.485 +05:30 [INF] Route matched with {action = "AddBus", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddBus() on controller BusBookingWeb.Controllers.AdminController (BusBookingApp).
+2023-12-07 19:58:34.549 +05:30 [INF] Executing ViewResult, running view AddBus.
+2023-12-07 19:58:34.801 +05:30 [INF] Executed ViewResult - view AddBus executed in 254.2019ms.
+2023-12-07 19:58:34.801 +05:30 [INF] Executed action BusBookingWeb.Controllers.AdminController.AddBus (BusBookingApp) in 315.1146ms
+2023-12-07 19:58:34.801 +05:30 [INF] Executed endpoint 'BusBookingWeb.Controllers.AdminController.AddBus (BusBookingApp)'
+2023-12-07 19:58:34.802 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7128/Admin/AddBus - - - 200 - text/html;+charset=utf-8 322.6529ms
+2023-12-07 19:58:34.822 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7128/css/Addbus.css - -
+2023-12-07 19:58:34.823 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7128/_framework/aspnetcore-browser-refresh.js - -
+2023-12-07 19:58:34.823 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7128/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 0.6932ms
+2023-12-07 19:58:34.869 +05:30 [INF] Sending file. Request path: '/css/Addbus.css'. Physical path: 'C:\Users\devi_\Desktop\BBS\BusBookingApp\wwwroot\css\Addbus.css'
+2023-12-07 19:58:34.870 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7128/css/Addbus.css - - - 200 2360 text/css 47.4763ms
+2023-12-07 19:58:43.040 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7128/Admin/AddBus - -
+2023-12-07 19:58:43.044 +05:30 [INF] Executing endpoint 'BusBookingWeb.Controllers.AdminController.AddBus (BusBookingApp)'
+2023-12-07 19:58:43.045 +05:30 [INF] Route matched with {action = "AddBus", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddBus() on controller BusBookingWeb.Controllers.AdminController (BusBookingApp).
+2023-12-07 19:58:43.050 +05:30 [INF] Executing ViewResult, running view AddBus.
+2023-12-07 19:58:43.053 +05:30 [INF] Executed ViewResult - view AddBus executed in 3.3432ms.
+2023-12-07 19:58:43.054 +05:30 [INF] Executed action BusBookingWeb.Controllers.AdminController.AddBus (BusBookingApp) in 8.0381ms
+2023-12-07 19:58:43.054 +05:30 [INF] Executed endpoint 'BusBookingWeb.Controllers.AdminController.AddBus (BusBookingApp)'
+2023-12-07 19:58:43.054 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7128/Admin/AddBus - - - 200 - text/html;+charset=utf-8 14.1937ms
+2023-12-07 19:58:43.071 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7128/_framework/aspnetcore-browser-refresh.js - -
+2023-12-07 19:58:43.072 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7128/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 0.4040ms
+2023-12-07 19:58:44.491 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7128/Admin/totalBus - -
+2023-12-07 19:58:44.492 +05:30 [INF] Executing endpoint 'BusBookingWeb.Controllers.AdminController.totalBus (BusBookingApp)'
+2023-12-07 19:58:44.524 +05:30 [INF] Route matched with {action = "totalBus", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] totalBus() on controller BusBookingWeb.Controllers.AdminController (BusBookingApp).
+2023-12-07 19:58:48.874 +05:30 [ERR] An exception occurred.
+System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it. (localhost:7088)
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|277_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(HttpRequestMessage request)
+   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.GetHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.DiagnosticsHandler.SendAsyncCore(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)
+   at BusBookingWeb.Controllers.AdminController.totalBus() in C:\Users\devi_\Desktop\BBS\BusBookingApp\Controllers\AdminController.cs:line 24
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2023-12-07 19:58:49.143 +05:30 [INF] Executing ViewResult, running view ErrorView.
+2023-12-07 19:58:49.165 +05:30 [INF] Executed ViewResult - view ErrorView executed in 24.6176ms.
+2023-12-07 19:58:49.168 +05:30 [INF] Executed action BusBookingWeb.Controllers.AdminController.totalBus (BusBookingApp) in 4644.0532ms
+2023-12-07 19:58:49.169 +05:30 [INF] Executed endpoint 'BusBookingWeb.Controllers.AdminController.totalBus (BusBookingApp)'
+2023-12-07 19:58:49.171 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7128/Admin/totalBus - - - 200 - text/html;+charset=utf-8 4679.5488ms
+2023-12-07 19:59:30.532 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7128/Admin/AddBus - -
+2023-12-07 19:59:30.532 +05:30 [INF] Executing endpoint 'BusBookingWeb.Controllers.AdminController.AddBus (BusBookingApp)'
+2023-12-07 19:59:30.532 +05:30 [INF] Route matched with {action = "AddBus", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddBus() on controller BusBookingWeb.Controllers.AdminController (BusBookingApp).
+2023-12-07 19:59:30.533 +05:30 [INF] Executing ViewResult, running view AddBus.
+2023-12-07 19:59:30.535 +05:30 [INF] Executed ViewResult - view AddBus executed in 2.1177ms.
+2023-12-07 19:59:30.535 +05:30 [INF] Executed action BusBookingWeb.Controllers.AdminController.AddBus (BusBookingApp) in 2.5867ms
+2023-12-07 19:59:30.535 +05:30 [INF] Executed endpoint 'BusBookingWeb.Controllers.AdminController.AddBus (BusBookingApp)'
+2023-12-07 19:59:30.535 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7128/Admin/AddBus - - - 200 - text/html;+charset=utf-8 3.4490ms
+2023-12-07 19:59:30.633 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7128/_framework/aspnetcore-browser-refresh.js - -
+2023-12-07 19:59:30.634 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7128/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 0.3360ms
+2023-12-07 20:00:28.413 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7128/Admin/AddBus - -
+2023-12-07 20:00:28.413 +05:30 [INF] Executing endpoint 'BusBookingWeb.Controllers.AdminController.AddBus (BusBookingApp)'
+2023-12-07 20:00:28.414 +05:30 [INF] Route matched with {action = "AddBus", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddBus() on controller BusBookingWeb.Controllers.AdminController (BusBookingApp).
+2023-12-07 20:00:28.414 +05:30 [INF] Executing ViewResult, running view AddBus.
+2023-12-07 20:00:28.415 +05:30 [INF] Executed ViewResult - view AddBus executed in 1.1847ms.
+2023-12-07 20:00:28.415 +05:30 [INF] Executed action BusBookingWeb.Controllers.AdminController.AddBus (BusBookingApp) in 1.6351ms
+2023-12-07 20:00:28.415 +05:30 [INF] Executed endpoint 'BusBookingWeb.Controllers.AdminController.AddBus (BusBookingApp)'
+2023-12-07 20:00:28.415 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7128/Admin/AddBus - - - 200 - text/html;+charset=utf-8 2.4234ms
+2023-12-07 20:00:28.426 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7128/_framework/aspnetcore-browser-refresh.js - -
+2023-12-07 20:00:28.427 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7128/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 0.3110ms
+2023-12-07 20:00:30.608 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7128/Admin/totalBus - -
+2023-12-07 20:00:30.608 +05:30 [INF] Executing endpoint 'BusBookingWeb.Controllers.AdminController.totalBus (BusBookingApp)'
+2023-12-07 20:00:30.608 +05:30 [INF] Route matched with {action = "totalBus", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] totalBus() on controller BusBookingWeb.Controllers.AdminController (BusBookingApp).
+2023-12-07 20:00:39.446 +05:30 [INF] Executing ViewResult, running view TotalBus.
+2023-12-07 20:00:39.554 +05:30 [INF] Executed ViewResult - view TotalBus executed in 108.4944ms.
+2023-12-07 20:00:39.555 +05:30 [INF] Executed action BusBookingWeb.Controllers.AdminController.totalBus (BusBookingApp) in 8946.338ms
+2023-12-07 20:00:39.555 +05:30 [INF] Executed endpoint 'BusBookingWeb.Controllers.AdminController.totalBus (BusBookingApp)'
+2023-12-07 20:00:39.557 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7128/Admin/totalBus - - - 200 - text/html;+charset=utf-8 8947.9490ms
+2023-12-07 20:00:39.585 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7128/css/Removebus.css - -
+2023-12-07 20:00:39.601 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7128/_framework/aspnetcore-browser-refresh.js - -
+2023-12-07 20:00:39.602 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7128/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 0.2851ms
+2023-12-07 20:00:39.619 +05:30 [INF] Sending file. Request path: '/css/Removebus.css'. Physical path: 'C:\Users\devi_\Desktop\BBS\BusBookingApp\wwwroot\css\Removebus.css'
+2023-12-07 20:00:39.619 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7128/css/Removebus.css - - - 200 1858 text/css 33.8176ms
+2023-12-07 20:22:45.941 +05:30 [INF] User profile is available. Using 'C:\Users\devi_\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-12-07 20:22:46.278 +05:30 [INF] Now listening on: https://localhost:7128
+2023-12-07 20:22:46.278 +05:30 [INF] Now listening on: http://localhost:5105
+2023-12-07 20:22:46.287 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-07 20:22:46.287 +05:30 [INF] Hosting environment: Development
+2023-12-07 20:22:46.287 +05:30 [INF] Content root path: C:\Users\devi_\Desktop\BBS\BusBookingApp\
+2023-12-07 20:22:46.537 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7128/Admin/totalBus - -
+2023-12-07 20:22:46.637 +05:30 [INF] Executing endpoint 'BusBookingWeb.Controllers.AdminController.totalBus (BusBookingApp)'
+2023-12-07 20:22:46.720 +05:30 [INF] Route matched with {action = "totalBus", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] totalBus() on controller BusBookingWeb.Controllers.AdminController (BusBookingApp).
+2023-12-07 20:22:49.392 +05:30 [INF] Executing ViewResult, running view TotalBus.
+2023-12-07 20:22:49.398 +05:30 [ERR] The view 'TotalBus' was not found. Searched locations: ["/Views/Admin/TotalBus.cshtml","/Views/Shared/TotalBus.cshtml"]
+2023-12-07 20:22:49.655 +05:30 [INF] Executed action BusBookingWeb.Controllers.AdminController.totalBus (BusBookingApp) in 2926.8801ms
+2023-12-07 20:22:49.765 +05:30 [INF] Executed endpoint 'BusBookingWeb.Controllers.AdminController.totalBus (BusBookingApp)'
+2023-12-07 20:22:49.770 +05:30 [INF] Accessing expired session, Key:5d3be320-f45e-ef3c-f98a-2c52d4d4303b
+2023-12-07 20:22:49.792 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The view 'TotalBus' was not found. The following locations were searched:
+/Views/Admin/TotalBus.cshtml
+/Views/Shared/TotalBus.cshtml
+   at Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-12-07 20:22:50.429 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7128/Admin/totalBus - - - 500 - text/html;+charset=utf-8 3896.2403ms
+2023-12-07 20:22:50.520 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7128/_framework/aspnetcore-browser-refresh.js - -
+2023-12-07 20:22:50.524 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7128/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 4.5532ms
+2023-12-07 20:27:34.286 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7128/Admin/AddBus - -
+2023-12-07 20:27:34.291 +05:30 [INF] Executing endpoint 'BusBookingWeb.Controllers.AdminController.AddBus (BusBookingApp)'
+2023-12-07 20:27:34.293 +05:30 [INF] Route matched with {action = "AddBus", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddBus() on controller BusBookingWeb.Controllers.AdminController (BusBookingApp).
+2023-12-07 20:27:34.303 +05:30 [INF] Executing ViewResult, running view AddBus.
+2023-12-07 20:27:34.303 +05:30 [ERR] The view 'AddBus' was not found. Searched locations: ["/Views/Admin/AddBus.cshtml","/Views/Shared/AddBus.cshtml"]
+2023-12-07 20:27:34.303 +05:30 [INF] Executed action BusBookingWeb.Controllers.AdminController.AddBus (BusBookingApp) in 10.1183ms
+2023-12-07 20:27:34.304 +05:30 [INF] Executed endpoint 'BusBookingWeb.Controllers.AdminController.AddBus (BusBookingApp)'
+2023-12-07 20:27:34.304 +05:30 [INF] Accessing expired session, Key:5d3be320-f45e-ef3c-f98a-2c52d4d4303b
+2023-12-07 20:27:34.304 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The view 'AddBus' was not found. The following locations were searched:
+/Views/Admin/AddBus.cshtml
+/Views/Shared/AddBus.cshtml
+   at Microsoft.AspNetCore.Mvc.ViewEngines.ViewEngineResult.EnsureSuccessful(IEnumerable`1 originalLocations)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2023-12-07 20:27:34.309 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7128/Admin/AddBus - - - 500 - text/html;+charset=utf-8 23.0965ms
+2023-12-07 20:27:34.338 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7128/_framework/aspnetcore-browser-refresh.js - -
+2023-12-07 20:27:34.338 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7128/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 0.2539ms
+2023-12-07 20:27:55.797 +05:30 [INF] Application is shutting down...

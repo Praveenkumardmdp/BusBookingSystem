@@ -1,0 +1,155 @@
+@model  List<BusBookingApp.bus.BusDetail>
+@{
+    ViewData["Title"]="Available Bus";
+    Layout=null;
+}
+@{
+    int index =1;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - @ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/Removebus.css" type="text/css">
+    <style>
+        .dialog {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 9999;
+        }
+
+        .dialog-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .dialog-buttons {
+            margin-top: 20px;
+        }
+
+        .dialog-buttons button {
+            margin: 10px 10px;
+            width: 100px;
+            padding: 10px;
+            border-radius: 10px;
+            color: antiquewhite;
+            background-color: black;
+            cursor: pointer;
+        }
+
+  </style>
+</head>
+<body>
+    <div class="header">
+        <header>
+            <div class="layout">
+                <p class="layout1">
+                    <select onchange="location = this.value;" >
+                        <option selected>Manage</option>
+                        <option value="https://localhost:7128/Admin/AddBus">Add Bus</option>
+                        <option value="https://localhost:7128/Admin/totalBus">Remove Bus</option>
+                    </select>
+                </p>
+                <p class="layout2">
+                    <select onchange="location = this.value;" >
+                        <option selected >Admin</option>
+                        <option value="https://localhost:7128/Admin/UserProfiles">User Profiles</option>
+                        <option value="https://localhost:7128/Client/Logout" >Logout</option>                
+                    </select>
+                </p>
+            </div>
+        </header>
+    </div>
+    <div class="main">
+        <div class="mainlayout1">
+            <div class="grid">
+                    <div class="content">
+                        <table class="table table-responsive">
+                            <thead class="thead">
+                                <tr class="row">
+                                    <th>S.No</th>
+                                    <th>Bus Name </th>
+                                    <th>Bus Number </th>
+                                    <th>Source</th>
+                                    <th>Destination</th>
+                                    <th>Date</th>
+                                    <th>PickUpTime</th>
+                                    <th>DropTime</th>
+                                    <th colspan="2">Action</th>
+                                </tr>
+                            </thead>
+
+                            @foreach (var item in Model)
+                            {
+                            <tbody class="tbody">
+                                <tr class="row">
+                                    <td>@index</td>
+                                    <td>@item.Name</td>
+                                    <td>@item.registrationNo</td>
+                                    <td>@item.source</td>
+                                    <td>@item.destination</td>
+                                    <td>@item.pickupDate.ToString("dd-MM-yyyy")</td>
+                                    <td>@item.pickuptime</td>
+                                    <td>@item.droptime </td>
+                                    <td class="btn"><a asp-action="Edit" asp-controller="Admin" asp-route-registrationno="@item.registrationNo" >Edit Bus</a></td>
+                                    <td class="btn"><a href="javascript:void(0)" onclick="openConfirmationDialog('@item.registrationNo')">Remove Bus</a></td>
+                                </tr>
+                            </tbody>
+                            index++;
+                            }
+                        </table>
+                    </div>
+            </div> 
+        </div>
+    </div>
+    <div id="confirmationDialog" class="dialog">
+        <div class="dialog-content">
+            <h2>Confirm Delete</h2>
+            <p>Are you sure you want to remove this Bus?</p>
+            <div class="dialog-buttons">
+                <button onclick="confirmDelete()">Yes</button>
+                <button onclick="closeConfirmationDialog()">No</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        var registrationNo = '';
+
+        function openConfirmationDialog(busNumber) {
+            registrationNo = busNumber;
+            var dialog = document.getElementById("confirmationDialog");
+            dialog.style.display = "block";
+        }
+        
+        function closeConfirmationDialog() {
+            registrationNo = '';
+            var dialog = document.getElementById("confirmationDialog");
+            dialog.style.display = "none";
+        }
+        
+        function confirmDelete() {
+            if (registrationNo) {
+                console.log("Delete operation confirmed for bus number: " + registrationNo);
+
+                // Redirect to the desired page using ASP.NET
+                window.location.href = "/Admin/RemoveBus?registrationNo=" + registrationNo;
+            }
+            closeConfirmationDialog();
+        }
+    </script>
+</body>
+</html>

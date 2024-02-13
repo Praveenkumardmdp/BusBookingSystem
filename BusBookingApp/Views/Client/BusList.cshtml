@@ -1,0 +1,48 @@
+@model List<BusBookingApp.bus.BusDetail>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+         *
+          {
+            padding:0px;
+            margin:0px;
+            box-sizing: border-box;
+          }
+          .bus-box
+          {
+            padding:10px;
+            border-style:solid;
+            border-color:rgb(123, 15, 123);
+            border-width: 5px;
+            position: center;
+            margin-bottom: 5px;           
+            
+          }
+          .input{
+            
+            background-color: rgb(123, 15, 123);
+            color: white;
+            border:none;
+          }
+
+        </style>
+    </head>
+    <body >
+      <form method="post" action="~/Client/getbus">
+         @foreach(var list in Model)
+        {
+            <div class="bus-box">
+                <p >@list.Name @list.registrationNo</p>
+                <p ><strong>Source:</strong>@list.source <strong>Time:</strong>@list.pickuptime  </p>
+                <p ><strong>Destination: </strong>@list.destination <strong>Drop Time: </strong>@list.droptime</p>                
+                <input type="hidden" name="bus" value=@list.registrationNo >
+                <input class="input"  type="submit" value="view seat" name="seat">
+            </div>
+            
+        }
+      </form>
+       
+    </body>
+</html>

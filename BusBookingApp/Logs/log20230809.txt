@@ -1,0 +1,424 @@
+2023-08-09 11:40:18.726 +05:30 [INF] User profile is available. Using 'C:\Users\devi_\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-09 11:40:19.323 +05:30 [INF] Now listening on: https://localhost:7128
+2023-08-09 11:40:19.327 +05:30 [INF] Now listening on: http://localhost:5105
+2023-08-09 11:40:19.337 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-09 11:40:19.341 +05:30 [INF] Hosting environment: Development
+2023-08-09 11:40:19.343 +05:30 [INF] Content root path: C:\Users\devi_\Desktop\BBS\BusBookingApp\
+2023-08-09 11:41:51.265 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7128/ - -
+2023-08-09 11:41:52.122 +05:30 [INF] Executing endpoint 'BusBookingApp.Controllers.HomeController.Index (BusBookingApp)'
+2023-08-09 11:41:52.343 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller BusBookingApp.Controllers.HomeController (BusBookingApp).
+2023-08-09 11:41:52.632 +05:30 [INF] Executing ViewResult, running view Index.
+2023-08-09 11:41:54.447 +05:30 [INF] Executed ViewResult - view Index executed in 1991.0412ms.
+2023-08-09 11:41:54.580 +05:30 [INF] Executed action BusBookingApp.Controllers.HomeController.Index (BusBookingApp) in 2235.4264ms
+2023-08-09 11:41:54.582 +05:30 [INF] Executed endpoint 'BusBookingApp.Controllers.HomeController.Index (BusBookingApp)'
+2023-08-09 11:41:54.588 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7128/ - - - 200 - text/html;+charset=utf-8 3325.4920ms
+2023-08-09 11:42:04.990 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7128/Home/Login? - -
+2023-08-09 11:42:04.994 +05:30 [INF] Executing endpoint 'BusBookingApp.Controllers.HomeController.Login (BusBookingApp)'
+2023-08-09 11:42:04.996 +05:30 [INF] Route matched with {action = "Login", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller BusBookingApp.Controllers.HomeController (BusBookingApp).
+2023-08-09 11:42:04.999 +05:30 [INF] Executing ViewResult, running view Login.
+2023-08-09 11:42:05.471 +05:30 [INF] Executed ViewResult - view Login executed in 472.3819ms.
+2023-08-09 11:42:05.473 +05:30 [INF] Executed action BusBookingApp.Controllers.HomeController.Login (BusBookingApp) in 474.766ms
+2023-08-09 11:42:05.475 +05:30 [INF] Executed endpoint 'BusBookingApp.Controllers.HomeController.Login (BusBookingApp)'
+2023-08-09 11:42:05.477 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7128/Home/Login? - - - 200 - text/html;+charset=utf-8 486.9074ms
+2023-08-09 11:42:22.771 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7128/Client/loginuser application/x-www-form-urlencoded 230
+2023-08-09 11:42:22.818 +05:30 [INF] Executing endpoint 'ClientController.loginuser (BusBookingApp)'
+2023-08-09 11:42:22.821 +05:30 [INF] Route matched with {action = "loginuser", controller = "Client"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult loginuser() on controller ClientController (BusBookingApp).
+2023-08-09 11:42:23.328 +05:30 [INF] Executing RedirectResult, redirecting to /Admin/AddBus.
+2023-08-09 11:42:23.331 +05:30 [INF] Executed action ClientController.loginuser (BusBookingApp) in 506.7875ms
+2023-08-09 11:42:23.332 +05:30 [INF] Executed endpoint 'ClientController.loginuser (BusBookingApp)'
+2023-08-09 11:42:23.337 +05:30 [INF] Session started; Key:720148e0-25f6-07c9-54a5-966e2fc475c9, Id:7afad522-a263-ec26-f1bc-8bc112c21202
+2023-08-09 11:42:23.342 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7128/Client/loginuser application/x-www-form-urlencoded 230 - 302 0 - 571.2736ms
+2023-08-09 11:42:23.380 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7128/Admin/AddBus - -
+2023-08-09 11:42:23.383 +05:30 [INF] Executing endpoint 'BusBookingWeb.Controllers.AdminController.AddBus (BusBookingApp)'
+2023-08-09 11:42:23.385 +05:30 [INF] Route matched with {action = "AddBus", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddBus() on controller BusBookingWeb.Controllers.AdminController (BusBookingApp).
+2023-08-09 11:42:23.397 +05:30 [INF] Executing ViewResult, running view AddBus.
+2023-08-09 11:42:23.471 +05:30 [INF] Executed ViewResult - view AddBus executed in 73.9889ms.
+2023-08-09 11:42:23.474 +05:30 [INF] Executed action BusBookingWeb.Controllers.AdminController.AddBus (BusBookingApp) in 86.7429ms
+2023-08-09 11:42:23.476 +05:30 [INF] Executed endpoint 'BusBookingWeb.Controllers.AdminController.AddBus (BusBookingApp)'
+2023-08-09 11:42:23.477 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7128/Admin/AddBus - - - 200 - text/html;+charset=utf-8 96.8581ms
+2023-08-09 11:42:29.037 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7128/Admin/UserProfiles - -
+2023-08-09 11:42:29.040 +05:30 [INF] Executing endpoint 'BusBookingWeb.Controllers.AdminController.UserProfiles (BusBookingApp)'
+2023-08-09 11:42:29.044 +05:30 [INF] Route matched with {action = "UserProfiles", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UserProfiles() on controller BusBookingWeb.Controllers.AdminController (BusBookingApp).
+2023-08-09 11:42:35.514 +05:30 [INF] Executing ViewResult, running view UserDetails.
+2023-08-09 11:42:35.550 +05:30 [INF] Executed ViewResult - view UserDetails executed in 37.692ms.
+2023-08-09 11:42:35.557 +05:30 [INF] Executed action BusBookingWeb.Controllers.AdminController.UserProfiles (BusBookingApp) in 6510.1527ms
+2023-08-09 11:42:35.562 +05:30 [INF] Executed endpoint 'BusBookingWeb.Controllers.AdminController.UserProfiles (BusBookingApp)'
+2023-08-09 11:42:35.567 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7128/Admin/UserProfiles - - - 200 - text/html;+charset=utf-8 6530.0267ms
+2023-08-09 11:42:39.842 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7128/Client/Logout - -
+2023-08-09 11:42:39.859 +05:30 [INF] Executing endpoint 'ClientController.Logout (BusBookingApp)'
+2023-08-09 11:42:39.866 +05:30 [INF] Route matched with {action = "Logout", controller = "Client"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Logout() on controller ClientController (BusBookingApp).
+2023-08-09 11:42:39.875 +05:30 [INF] Executing ViewResult, running view Logout.
+2023-08-09 11:42:40.019 +05:30 [INF] Executed ViewResult - view Logout executed in 144.7701ms.
+2023-08-09 11:42:40.024 +05:30 [INF] Executed action ClientController.Logout (BusBookingApp) in 151.095ms
+2023-08-09 11:42:40.028 +05:30 [INF] Executed endpoint 'ClientController.Logout (BusBookingApp)'
+2023-08-09 11:42:40.032 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7128/Client/Logout - - - 200 - text/html;+charset=utf-8 189.9032ms
+2023-08-09 11:42:40.162 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7128/RegisterAndLogin.styles.css - -
+2023-08-09 11:42:40.248 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7128/RegisterAndLogin.styles.css - - - 404 0 - 85.6834ms
+2023-08-09 11:42:42.453 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7128/Home/Index? - -
+2023-08-09 11:42:42.460 +05:30 [INF] Executing endpoint 'BusBookingApp.Controllers.HomeController.Index (BusBookingApp)'
+2023-08-09 11:42:42.463 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller BusBookingApp.Controllers.HomeController (BusBookingApp).
+2023-08-09 11:42:42.468 +05:30 [INF] Executing ViewResult, running view Index.
+2023-08-09 11:42:42.475 +05:30 [INF] Executed ViewResult - view Index executed in 6.8026ms.
+2023-08-09 11:42:42.481 +05:30 [INF] Executed action BusBookingApp.Controllers.HomeController.Index (BusBookingApp) in 12.984ms
+2023-08-09 11:42:42.486 +05:30 [INF] Executed endpoint 'BusBookingApp.Controllers.HomeController.Index (BusBookingApp)'
+2023-08-09 11:42:42.491 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7128/Home/Index? - - - 200 - text/html;+charset=utf-8 37.4807ms
+2023-08-09 11:42:44.029 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7128/Home/Login? - -
+2023-08-09 11:42:44.032 +05:30 [INF] Executing endpoint 'BusBookingApp.Controllers.HomeController.Login (BusBookingApp)'
+2023-08-09 11:42:44.036 +05:30 [INF] Route matched with {action = "Login", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller BusBookingApp.Controllers.HomeController (BusBookingApp).
+2023-08-09 11:42:44.042 +05:30 [INF] Executing ViewResult, running view Login.
+2023-08-09 11:42:44.049 +05:30 [INF] Executed ViewResult - view Login executed in 6.359ms.
+2023-08-09 11:42:44.053 +05:30 [INF] Executed action BusBookingApp.Controllers.HomeController.Login (BusBookingApp) in 11.1719ms
+2023-08-09 11:42:44.059 +05:30 [INF] Executed endpoint 'BusBookingApp.Controllers.HomeController.Login (BusBookingApp)'
+2023-08-09 11:42:44.064 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7128/Home/Login? - - - 200 - text/html;+charset=utf-8 34.2805ms
+2023-08-09 11:42:50.615 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7128/Client/loginuser application/x-www-form-urlencoded 218
+2023-08-09 11:42:50.619 +05:30 [INF] Executing endpoint 'ClientController.loginuser (BusBookingApp)'
+2023-08-09 11:42:50.621 +05:30 [INF] Route matched with {action = "loginuser", controller = "Client"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult loginuser() on controller ClientController (BusBookingApp).
+2023-08-09 11:42:50.626 +05:30 [INF] Executing RedirectResult, redirecting to /Admin/AddBus.
+2023-08-09 11:42:50.629 +05:30 [INF] Executed action ClientController.loginuser (BusBookingApp) in 3.5312ms
+2023-08-09 11:42:50.632 +05:30 [INF] Executed endpoint 'ClientController.loginuser (BusBookingApp)'
+2023-08-09 11:42:50.636 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7128/Client/loginuser application/x-www-form-urlencoded 218 - 302 0 - 20.9051ms
+2023-08-09 11:42:50.643 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7128/Admin/AddBus - -
+2023-08-09 11:42:50.647 +05:30 [INF] Executing endpoint 'BusBookingWeb.Controllers.AdminController.AddBus (BusBookingApp)'
+2023-08-09 11:42:50.651 +05:30 [INF] Route matched with {action = "AddBus", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddBus() on controller BusBookingWeb.Controllers.AdminController (BusBookingApp).
+2023-08-09 11:42:50.655 +05:30 [INF] Executing ViewResult, running view AddBus.
+2023-08-09 11:42:50.662 +05:30 [INF] Executed ViewResult - view AddBus executed in 6.9972ms.
+2023-08-09 11:42:50.667 +05:30 [INF] Executed action BusBookingWeb.Controllers.AdminController.AddBus (BusBookingApp) in 12.158ms
+2023-08-09 11:42:50.671 +05:30 [INF] Executed endpoint 'BusBookingWeb.Controllers.AdminController.AddBus (BusBookingApp)'
+2023-08-09 11:42:50.675 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7128/Admin/AddBus - - - 200 - text/html;+charset=utf-8 31.1318ms
+2023-08-09 11:42:53.346 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7128/Admin/UserProfiles - -
+2023-08-09 11:42:53.348 +05:30 [INF] Executing endpoint 'BusBookingWeb.Controllers.AdminController.UserProfiles (BusBookingApp)'
+2023-08-09 11:42:53.350 +05:30 [INF] Route matched with {action = "UserProfiles", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UserProfiles() on controller BusBookingWeb.Controllers.AdminController (BusBookingApp).
+2023-08-09 11:42:53.552 +05:30 [INF] Executing ViewResult, running view UserDetails.
+2023-08-09 11:42:53.555 +05:30 [INF] Executed ViewResult - view UserDetails executed in 2.7945ms.
+2023-08-09 11:42:53.557 +05:30 [INF] Executed action BusBookingWeb.Controllers.AdminController.UserProfiles (BusBookingApp) in 205.4955ms
+2023-08-09 11:42:53.559 +05:30 [INF] Executed endpoint 'BusBookingWeb.Controllers.AdminController.UserProfiles (BusBookingApp)'
+2023-08-09 11:42:53.561 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7128/Admin/UserProfiles - - - 200 - text/html;+charset=utf-8 215.0546ms
+2023-08-09 11:42:56.418 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7128/Client/Logout - -
+2023-08-09 11:42:56.420 +05:30 [INF] Executing endpoint 'ClientController.Logout (BusBookingApp)'
+2023-08-09 11:42:56.423 +05:30 [INF] Route matched with {action = "Logout", controller = "Client"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Logout() on controller ClientController (BusBookingApp).
+2023-08-09 11:42:56.426 +05:30 [INF] Executing ViewResult, running view Logout.
+2023-08-09 11:42:56.429 +05:30 [INF] Executed ViewResult - view Logout executed in 2.715ms.
+2023-08-09 11:42:56.431 +05:30 [INF] Executed action ClientController.Logout (BusBookingApp) in 4.9428ms
+2023-08-09 11:42:56.433 +05:30 [INF] Executed endpoint 'ClientController.Logout (BusBookingApp)'
+2023-08-09 11:42:56.435 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7128/Client/Logout - - - 200 - text/html;+charset=utf-8 16.4898ms
+2023-08-09 11:42:56.457 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7128/RegisterAndLogin.styles.css - -
+2023-08-09 11:42:56.460 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7128/RegisterAndLogin.styles.css - - - 404 0 - 2.3434ms
+2023-08-09 11:43:03.447 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7128/Home/Index? - -
+2023-08-09 11:43:03.449 +05:30 [INF] Executing endpoint 'BusBookingApp.Controllers.HomeController.Index (BusBookingApp)'
+2023-08-09 11:43:03.450 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller BusBookingApp.Controllers.HomeController (BusBookingApp).
+2023-08-09 11:43:03.452 +05:30 [INF] Executing ViewResult, running view Index.
+2023-08-09 11:43:03.453 +05:30 [INF] Executed ViewResult - view Index executed in 1.2253ms.
+2023-08-09 11:43:03.455 +05:30 [INF] Executed action BusBookingApp.Controllers.HomeController.Index (BusBookingApp) in 3.0247ms
+2023-08-09 11:43:03.457 +05:30 [INF] Executed endpoint 'BusBookingApp.Controllers.HomeController.Index (BusBookingApp)'
+2023-08-09 11:43:03.459 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7128/Home/Index? - - - 200 - text/html;+charset=utf-8 11.2183ms
+2023-08-09 11:43:04.793 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7128/Home/Login? - -
+2023-08-09 11:43:04.794 +05:30 [INF] Executing endpoint 'BusBookingApp.Controllers.HomeController.Login (BusBookingApp)'
+2023-08-09 11:43:04.797 +05:30 [INF] Route matched with {action = "Login", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller BusBookingApp.Controllers.HomeController (BusBookingApp).
+2023-08-09 11:43:04.800 +05:30 [INF] Executing ViewResult, running view Login.
+2023-08-09 11:43:04.803 +05:30 [INF] Executed ViewResult - view Login executed in 2.9291ms.
+2023-08-09 11:43:04.805 +05:30 [INF] Executed action BusBookingApp.Controllers.HomeController.Login (BusBookingApp) in 4.7366ms
+2023-08-09 11:43:04.807 +05:30 [INF] Executed endpoint 'BusBookingApp.Controllers.HomeController.Login (BusBookingApp)'
+2023-08-09 11:43:04.809 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7128/Home/Login? - - - 200 - text/html;+charset=utf-8 16.3230ms
+2023-08-09 11:43:11.037 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7128/Client/loginuser application/x-www-form-urlencoded 218
+2023-08-09 11:43:11.039 +05:30 [INF] Executing endpoint 'ClientController.loginuser (BusBookingApp)'
+2023-08-09 11:43:11.040 +05:30 [INF] Route matched with {action = "loginuser", controller = "Client"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult loginuser() on controller ClientController (BusBookingApp).
+2023-08-09 11:43:11.043 +05:30 [INF] Executing RedirectResult, redirecting to /Admin/AddBus.
+2023-08-09 11:43:11.044 +05:30 [INF] Executed action ClientController.loginuser (BusBookingApp) in 1.4489ms
+2023-08-09 11:43:11.046 +05:30 [INF] Executed endpoint 'ClientController.loginuser (BusBookingApp)'
+2023-08-09 11:43:11.048 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7128/Client/loginuser application/x-www-form-urlencoded 218 - 302 0 - 10.9832ms
+2023-08-09 11:43:11.053 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7128/Admin/AddBus - -
+2023-08-09 11:43:11.054 +05:30 [INF] Executing endpoint 'BusBookingWeb.Controllers.AdminController.AddBus (BusBookingApp)'
+2023-08-09 11:43:11.057 +05:30 [INF] Route matched with {action = "AddBus", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddBus() on controller BusBookingWeb.Controllers.AdminController (BusBookingApp).
+2023-08-09 11:43:11.061 +05:30 [INF] Executing ViewResult, running view AddBus.
+2023-08-09 11:43:11.066 +05:30 [INF] Executed ViewResult - view AddBus executed in 5.2731ms.
+2023-08-09 11:43:11.070 +05:30 [INF] Executed action BusBookingWeb.Controllers.AdminController.AddBus (BusBookingApp) in 8.8494ms
+2023-08-09 11:43:11.072 +05:30 [INF] Executed endpoint 'BusBookingWeb.Controllers.AdminController.AddBus (BusBookingApp)'
+2023-08-09 11:43:11.074 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7128/Admin/AddBus - - - 200 - text/html;+charset=utf-8 21.5127ms
+2023-08-09 11:43:14.356 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7128/Admin/UserProfiles - -
+2023-08-09 11:43:14.358 +05:30 [INF] Executing endpoint 'BusBookingWeb.Controllers.AdminController.UserProfiles (BusBookingApp)'
+2023-08-09 11:43:14.360 +05:30 [INF] Route matched with {action = "UserProfiles", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UserProfiles() on controller BusBookingWeb.Controllers.AdminController (BusBookingApp).
+2023-08-09 11:43:14.488 +05:30 [INF] Executing ViewResult, running view UserDetails.
+2023-08-09 11:43:14.490 +05:30 [INF] Executed ViewResult - view UserDetails executed in 2.3272ms.
+2023-08-09 11:43:14.492 +05:30 [INF] Executed action BusBookingWeb.Controllers.AdminController.UserProfiles (BusBookingApp) in 129.2489ms
+2023-08-09 11:43:14.494 +05:30 [INF] Executed endpoint 'BusBookingWeb.Controllers.AdminController.UserProfiles (BusBookingApp)'
+2023-08-09 11:43:14.495 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7128/Admin/UserProfiles - - - 200 - text/html;+charset=utf-8 138.9233ms
+2023-08-09 11:43:16.913 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7128/Admin/AddBus - -
+2023-08-09 11:43:16.916 +05:30 [INF] Executing endpoint 'BusBookingWeb.Controllers.AdminController.AddBus (BusBookingApp)'
+2023-08-09 11:43:16.918 +05:30 [INF] Route matched with {action = "AddBus", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddBus() on controller BusBookingWeb.Controllers.AdminController (BusBookingApp).
+2023-08-09 11:43:16.921 +05:30 [INF] Executing ViewResult, running view AddBus.
+2023-08-09 11:43:16.924 +05:30 [INF] Executed ViewResult - view AddBus executed in 2.6206ms.
+2023-08-09 11:43:16.925 +05:30 [INF] Executed action BusBookingWeb.Controllers.AdminController.AddBus (BusBookingApp) in 4.6442ms
+2023-08-09 11:43:16.928 +05:30 [INF] Executed endpoint 'BusBookingWeb.Controllers.AdminController.AddBus (BusBookingApp)'
+2023-08-09 11:43:16.930 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7128/Admin/AddBus - - - 200 - text/html;+charset=utf-8 16.5587ms
+2023-08-09 11:43:27.711 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7128/Client/Logout - -
+2023-08-09 11:43:27.713 +05:30 [INF] Executing endpoint 'ClientController.Logout (BusBookingApp)'
+2023-08-09 11:43:27.715 +05:30 [INF] Route matched with {action = "Logout", controller = "Client"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Logout() on controller ClientController (BusBookingApp).
+2023-08-09 11:43:27.718 +05:30 [INF] Executing ViewResult, running view Logout.
+2023-08-09 11:43:27.721 +05:30 [INF] Executed ViewResult - view Logout executed in 2.9309ms.
+2023-08-09 11:43:27.724 +05:30 [INF] Executed action ClientController.Logout (BusBookingApp) in 5.8837ms
+2023-08-09 11:43:27.726 +05:30 [INF] Executed endpoint 'ClientController.Logout (BusBookingApp)'
+2023-08-09 11:43:27.728 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7128/Client/Logout - - - 200 - text/html;+charset=utf-8 17.0631ms
+2023-08-09 11:43:27.748 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7128/RegisterAndLogin.styles.css - -
+2023-08-09 11:43:27.751 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7128/RegisterAndLogin.styles.css - - - 404 0 - 2.5550ms
+2023-08-09 11:46:57.854 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7128/Admin/AddBus - -
+2023-08-09 11:46:57.856 +05:30 [INF] Executing endpoint 'BusBookingWeb.Controllers.AdminController.AddBus (BusBookingApp)'
+2023-08-09 11:46:57.858 +05:30 [INF] Route matched with {action = "AddBus", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddBus() on controller BusBookingWeb.Controllers.AdminController (BusBookingApp).
+2023-08-09 11:46:57.861 +05:30 [INF] Executing ViewResult, running view AddBus.
+2023-08-09 11:46:57.863 +05:30 [INF] Executed ViewResult - view AddBus executed in 2.2286ms.
+2023-08-09 11:46:57.864 +05:30 [INF] Executed action BusBookingWeb.Controllers.AdminController.AddBus (BusBookingApp) in 3.9884ms
+2023-08-09 11:46:57.866 +05:30 [INF] Executed endpoint 'BusBookingWeb.Controllers.AdminController.AddBus (BusBookingApp)'
+2023-08-09 11:46:57.867 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7128/Admin/AddBus - - - 200 - text/html;+charset=utf-8 13.2152ms
+2023-08-09 11:47:03.900 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7128/Admin/UserProfiles - -
+2023-08-09 11:47:03.902 +05:30 [INF] Executing endpoint 'BusBookingWeb.Controllers.AdminController.UserProfiles (BusBookingApp)'
+2023-08-09 11:47:03.904 +05:30 [INF] Route matched with {action = "UserProfiles", controller = "Admin"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UserProfiles() on controller BusBookingWeb.Controllers.AdminController (BusBookingApp).
+2023-08-09 11:47:10.671 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7128/Client/Logout - -
+2023-08-09 11:47:10.672 +05:30 [INF] Executing endpoint 'ClientController.Logout (BusBookingApp)'
+2023-08-09 11:47:10.674 +05:30 [INF] Route matched with {action = "Logout", controller = "Client"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Logout() on controller ClientController (BusBookingApp).
+2023-08-09 11:47:10.676 +05:30 [INF] Executing ViewResult, running view Logout.
+2023-08-09 11:47:10.678 +05:30 [INF] Executed ViewResult - view Logout executed in 1.9591ms.
+2023-08-09 11:47:10.680 +05:30 [INF] Executed action ClientController.Logout (BusBookingApp) in 4.3781ms
+2023-08-09 11:47:10.682 +05:30 [INF] Executed endpoint 'ClientController.Logout (BusBookingApp)'
+2023-08-09 11:47:10.684 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7128/Client/Logout - - - 200 - text/html;+charset=utf-8 13.0727ms
+2023-08-09 11:47:10.703 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7128/RegisterAndLogin.styles.css - -
+2023-08-09 11:47:10.705 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7128/RegisterAndLogin.styles.css - - - 404 0 - 2.1760ms
+2023-08-09 11:47:12.285 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7128/Home/Index? - -
+2023-08-09 11:47:12.287 +05:30 [INF] Executing endpoint 'BusBookingApp.Controllers.HomeController.Index (BusBookingApp)'
+2023-08-09 11:47:12.288 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller BusBookingApp.Controllers.HomeController (BusBookingApp).
+2023-08-09 11:47:12.291 +05:30 [INF] Executing ViewResult, running view Index.
+2023-08-09 11:47:12.292 +05:30 [INF] Executed ViewResult - view Index executed in 1.2796ms.
+2023-08-09 11:47:12.294 +05:30 [INF] Executed action BusBookingApp.Controllers.HomeController.Index (BusBookingApp) in 3.0108ms
+2023-08-09 11:47:12.296 +05:30 [INF] Executed endpoint 'BusBookingApp.Controllers.HomeController.Index (BusBookingApp)'
+2023-08-09 11:47:12.299 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7128/Home/Index? - - - 200 - text/html;+charset=utf-8 14.3007ms
+2023-08-09 11:47:12.691 +05:30 [INF] Executing ViewResult, running view UserDetails.
+2023-08-09 11:47:12.696 +05:30 [INF] Executed ViewResult - view UserDetails executed in 5.0935ms.
+2023-08-09 11:47:12.700 +05:30 [INF] Executed action BusBookingWeb.Controllers.AdminController.UserProfiles (BusBookingApp) in 8793.2567ms
+2023-08-09 11:47:12.704 +05:30 [INF] Executed endpoint 'BusBookingWeb.Controllers.AdminController.UserProfiles (BusBookingApp)'
+2023-08-09 11:47:12.708 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7128/Admin/UserProfiles - - - 200 - text/html;+charset=utf-8 8808.7335ms
+2023-08-09 11:48:16.106 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7128/Home/Login? - -
+2023-08-09 11:48:16.109 +05:30 [INF] Executing endpoint 'BusBookingApp.Controllers.HomeController.Login (BusBookingApp)'
+2023-08-09 11:48:16.110 +05:30 [INF] Route matched with {action = "Login", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller BusBookingApp.Controllers.HomeController (BusBookingApp).
+2023-08-09 11:48:16.112 +05:30 [INF] Executing ViewResult, running view Login.
+2023-08-09 11:48:16.114 +05:30 [INF] Executed ViewResult - view Login executed in 1.6226ms.
+2023-08-09 11:48:16.115 +05:30 [INF] Executed action BusBookingApp.Controllers.HomeController.Login (BusBookingApp) in 3.2993ms
+2023-08-09 11:48:16.117 +05:30 [INF] Executed endpoint 'BusBookingApp.Controllers.HomeController.Login (BusBookingApp)'
+2023-08-09 11:48:16.119 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7128/Home/Login? - - - 200 - text/html;+charset=utf-8 13.2444ms
+2023-08-09 11:49:27.920 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7128/Client/loginuser application/x-www-form-urlencoded 218
+2023-08-09 11:49:27.923 +05:30 [INF] Executing endpoint 'ClientController.loginuser (BusBookingApp)'
+2023-08-09 11:49:27.923 +05:30 [INF] Route matched with {action = "loginuser", controller = "Client"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult loginuser() on controller ClientController (BusBookingApp).
+2023-08-09 11:49:27.926 +05:30 [INF] Executing RedirectResult, redirecting to /Admin/AddBus.
+2023-08-09 11:49:27.927 +05:30 [INF] Executed action ClientController.loginuser (BusBookingApp) in 1.6634ms
+2023-08-09 11:49:27.928 +05:30 [INF] Executed endpoint 'ClientController.loginuser (BusBookingApp)'
+2023-08-09 11:49:27.930 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7128/Client/loginuser application/x-www-form-urlencoded 218 - 302 0 - 9.3351ms
+2023-08-09 11:49:27.933 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7128/Admin/AddBus - -
+2023-08-09 11:49:27.935 +05:30 [INF] Executing endpoint 'BusBookingWeb.Controllers.AdminController.AddBus (BusBookingApp)'
+2023-08-09 11:49:27.936 +05:30 [INF] Route matched with {action = "AddBus", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddBus() on controller BusBookingWeb.Controllers.AdminController (BusBookingApp).
+2023-08-09 11:49:27.938 +05:30 [INF] Executing ViewResult, running view AddBus.
+2023-08-09 11:49:27.940 +05:30 [INF] Executed ViewResult - view AddBus executed in 1.6705ms.
+2023-08-09 11:49:27.942 +05:30 [INF] Executed action BusBookingWeb.Controllers.AdminController.AddBus (BusBookingApp) in 4.4237ms
+2023-08-09 11:49:27.944 +05:30 [INF] Executed endpoint 'BusBookingWeb.Controllers.AdminController.AddBus (BusBookingApp)'
+2023-08-09 11:49:27.946 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7128/Admin/AddBus - - - 200 - text/html;+charset=utf-8 12.6451ms
+2023-08-09 11:49:30.397 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7128/Client/Logout - -
+2023-08-09 11:49:30.400 +05:30 [INF] Executing endpoint 'ClientController.Logout (BusBookingApp)'
+2023-08-09 11:49:30.402 +05:30 [INF] Route matched with {action = "Logout", controller = "Client"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Logout() on controller ClientController (BusBookingApp).
+2023-08-09 11:49:30.405 +05:30 [INF] Executing ViewResult, running view Logout.
+2023-08-09 11:49:30.407 +05:30 [INF] Executed ViewResult - view Logout executed in 1.8106ms.
+2023-08-09 11:49:30.408 +05:30 [INF] Executed action ClientController.Logout (BusBookingApp) in 3.8277ms
+2023-08-09 11:49:30.410 +05:30 [INF] Executed endpoint 'ClientController.Logout (BusBookingApp)'
+2023-08-09 11:49:30.412 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7128/Client/Logout - - - 200 - text/html;+charset=utf-8 15.1066ms
+2023-08-09 11:49:30.425 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7128/RegisterAndLogin.styles.css - -
+2023-08-09 11:49:30.428 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7128/RegisterAndLogin.styles.css - - - 404 0 - 3.4838ms
+2023-08-09 11:49:38.241 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7128/Client/Homepage - -
+2023-08-09 11:49:38.244 +05:30 [INF] Executing endpoint 'ClientController.Homepage (BusBookingApp)'
+2023-08-09 11:49:38.247 +05:30 [INF] Route matched with {action = "Homepage", controller = "Client"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Homepage() on controller ClientController (BusBookingApp).
+2023-08-09 11:49:38.250 +05:30 [INF] Authorization failed for the request at filter 'BusBookingApp.Validation.CustomAuthorizeFilter'.
+2023-08-09 11:49:38.251 +05:30 [INF] Executing RedirectResult, redirecting to /Home/Login.
+2023-08-09 11:49:38.252 +05:30 [INF] Executed action ClientController.Homepage (BusBookingApp) in 3.5018ms
+2023-08-09 11:49:38.253 +05:30 [INF] Executed endpoint 'ClientController.Homepage (BusBookingApp)'
+2023-08-09 11:49:38.255 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7128/Client/Homepage - - - 302 0 - 13.1471ms
+2023-08-09 11:49:38.258 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7128/Home/Login - -
+2023-08-09 11:49:38.259 +05:30 [INF] Executing endpoint 'BusBookingApp.Controllers.HomeController.Login (BusBookingApp)'
+2023-08-09 11:49:38.259 +05:30 [INF] Route matched with {action = "Login", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller BusBookingApp.Controllers.HomeController (BusBookingApp).
+2023-08-09 11:49:38.261 +05:30 [INF] Executing ViewResult, running view Login.
+2023-08-09 11:49:38.263 +05:30 [INF] Executed ViewResult - view Login executed in 1.4557ms.
+2023-08-09 11:49:38.264 +05:30 [INF] Executed action BusBookingApp.Controllers.HomeController.Login (BusBookingApp) in 2.899ms
+2023-08-09 11:49:38.265 +05:30 [INF] Executed endpoint 'BusBookingApp.Controllers.HomeController.Login (BusBookingApp)'
+2023-08-09 11:49:38.267 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7128/Home/Login - - - 200 - text/html;+charset=utf-8 9.2644ms
+2023-08-09 11:49:55.361 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7128/Client/Logout - -
+2023-08-09 11:49:55.362 +05:30 [INF] Executing endpoint 'ClientController.Logout (BusBookingApp)'
+2023-08-09 11:49:55.364 +05:30 [INF] Route matched with {action = "Logout", controller = "Client"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Logout() on controller ClientController (BusBookingApp).
+2023-08-09 11:49:55.366 +05:30 [INF] Executing ViewResult, running view Logout.
+2023-08-09 11:49:55.368 +05:30 [INF] Executed ViewResult - view Logout executed in 1.9455ms.
+2023-08-09 11:49:55.370 +05:30 [INF] Executed action ClientController.Logout (BusBookingApp) in 4.7859ms
+2023-08-09 11:49:55.373 +05:30 [INF] Executed endpoint 'ClientController.Logout (BusBookingApp)'
+2023-08-09 11:49:55.375 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7128/Client/Logout - - - 200 - text/html;+charset=utf-8 14.3437ms
+2023-08-09 11:49:55.386 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7128/RegisterAndLogin.styles.css - -
+2023-08-09 11:49:55.388 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7128/RegisterAndLogin.styles.css - - - 404 0 - 1.8460ms
+2023-08-09 11:49:56.772 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7128/Home/Index? - -
+2023-08-09 11:49:56.774 +05:30 [INF] Executing endpoint 'BusBookingApp.Controllers.HomeController.Index (BusBookingApp)'
+2023-08-09 11:49:56.775 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller BusBookingApp.Controllers.HomeController (BusBookingApp).
+2023-08-09 11:49:56.777 +05:30 [INF] Executing ViewResult, running view Index.
+2023-08-09 11:49:56.779 +05:30 [INF] Executed ViewResult - view Index executed in 1.3895ms.
+2023-08-09 11:49:56.780 +05:30 [INF] Executed action BusBookingApp.Controllers.HomeController.Index (BusBookingApp) in 2.9109ms
+2023-08-09 11:49:56.782 +05:30 [INF] Executed endpoint 'BusBookingApp.Controllers.HomeController.Index (BusBookingApp)'
+2023-08-09 11:49:56.784 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7128/Home/Index? - - - 200 - text/html;+charset=utf-8 11.9198ms
+2023-08-09 11:49:58.854 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7128/Home/Login? - -
+2023-08-09 11:49:58.857 +05:30 [INF] Executing endpoint 'BusBookingApp.Controllers.HomeController.Login (BusBookingApp)'
+2023-08-09 11:49:58.858 +05:30 [INF] Route matched with {action = "Login", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller BusBookingApp.Controllers.HomeController (BusBookingApp).
+2023-08-09 11:49:58.860 +05:30 [INF] Executing ViewResult, running view Login.
+2023-08-09 11:49:58.861 +05:30 [INF] Executed ViewResult - view Login executed in 1.835ms.
+2023-08-09 11:49:58.863 +05:30 [INF] Executed action BusBookingApp.Controllers.HomeController.Login (BusBookingApp) in 4.0079ms
+2023-08-09 11:49:58.865 +05:30 [INF] Executed endpoint 'BusBookingApp.Controllers.HomeController.Login (BusBookingApp)'
+2023-08-09 11:49:58.867 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7128/Home/Login? - - - 200 - text/html;+charset=utf-8 12.5282ms
+2023-08-09 11:51:03.275 +05:30 [INF] Application is shutting down...
+2023-08-09 11:51:43.628 +05:30 [INF] User profile is available. Using 'C:\Users\devi_\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-09 11:51:44.279 +05:30 [INF] Now listening on: https://localhost:7128
+2023-08-09 11:51:44.282 +05:30 [INF] Now listening on: http://localhost:5105
+2023-08-09 11:51:44.293 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-09 11:51:44.296 +05:30 [INF] Hosting environment: Development
+2023-08-09 11:51:44.299 +05:30 [INF] Content root path: C:\Users\devi_\Desktop\BBS\BusBookingApp\
+2023-08-09 11:52:57.573 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7128/ - -
+2023-08-09 11:52:57.609 +05:30 [INF] Executing endpoint 'BusBookingApp.Controllers.HomeController.Index (BusBookingApp)'
+2023-08-09 11:52:57.701 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller BusBookingApp.Controllers.HomeController (BusBookingApp).
+2023-08-09 11:52:57.755 +05:30 [INF] Executing ViewResult, running view Index.
+2023-08-09 11:53:01.196 +05:30 [WRN] As of ""2023-08-09T06:22:59.4781315+00:00"", the heartbeat has been running for ""00:00:01.4721170"" which is longer than ""00:00:01"". This could be caused by thread pool starvation.
+2023-08-09 11:53:01.516 +05:30 [INF] Executed ViewResult - view Index executed in 3791.4327ms.
+2023-08-09 11:53:01.522 +05:30 [INF] Executed action BusBookingApp.Controllers.HomeController.Index (BusBookingApp) in 3817.2606ms
+2023-08-09 11:53:01.525 +05:30 [INF] Executed endpoint 'BusBookingApp.Controllers.HomeController.Index (BusBookingApp)'
+2023-08-09 11:53:01.533 +05:30 [INF] Accessing expired session, Key:720148e0-25f6-07c9-54a5-966e2fc475c9
+2023-08-09 11:53:01.552 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7128/ - - - 200 - text/html;+charset=utf-8 3982.1347ms
+2023-08-09 11:53:03.601 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7128/Home/Login? - -
+2023-08-09 11:53:03.607 +05:30 [INF] Executing endpoint 'BusBookingApp.Controllers.HomeController.Login (BusBookingApp)'
+2023-08-09 11:53:03.614 +05:30 [INF] Route matched with {action = "Login", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller BusBookingApp.Controllers.HomeController (BusBookingApp).
+2023-08-09 11:53:03.630 +05:30 [INF] Executing ViewResult, running view Login.
+2023-08-09 11:53:03.736 +05:30 [INF] Executed ViewResult - view Login executed in 108.219ms.
+2023-08-09 11:53:03.740 +05:30 [INF] Executed action BusBookingApp.Controllers.HomeController.Login (BusBookingApp) in 113.0735ms
+2023-08-09 11:53:03.744 +05:30 [INF] Executed endpoint 'BusBookingApp.Controllers.HomeController.Login (BusBookingApp)'
+2023-08-09 11:53:03.747 +05:30 [INF] Accessing expired session, Key:720148e0-25f6-07c9-54a5-966e2fc475c9
+2023-08-09 11:53:03.752 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7128/Home/Login? - - - 200 - text/html;+charset=utf-8 151.0169ms
+2023-08-09 11:53:12.952 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7128/Client/loginuser application/x-www-form-urlencoded 218
+2023-08-09 11:53:12.957 +05:30 [INF] Executing endpoint 'ClientController.loginuser (BusBookingApp)'
+2023-08-09 11:53:12.963 +05:30 [INF] Route matched with {action = "loginuser", controller = "Client"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult loginuser() on controller ClientController (BusBookingApp).
+2023-08-09 11:53:13.590 +05:30 [INF] Accessing expired session, Key:720148e0-25f6-07c9-54a5-966e2fc475c9
+2023-08-09 11:53:13.596 +05:30 [INF] Executing RedirectResult, redirecting to /Admin/AddBus.
+2023-08-09 11:53:13.599 +05:30 [INF] Executed action ClientController.loginuser (BusBookingApp) in 630.4693ms
+2023-08-09 11:53:13.602 +05:30 [INF] Executed endpoint 'ClientController.loginuser (BusBookingApp)'
+2023-08-09 11:53:13.618 +05:30 [INF] Session started; Key:720148e0-25f6-07c9-54a5-966e2fc475c9, Id:1bb4bc57-c32d-00fa-eb1f-248c4f047b55
+2023-08-09 11:53:13.627 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7128/Client/loginuser application/x-www-form-urlencoded 218 - 302 0 - 674.7280ms
+2023-08-09 11:53:13.638 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7128/Admin/AddBus - -
+2023-08-09 11:53:13.641 +05:30 [INF] Executing endpoint 'BusBookingWeb.Controllers.AdminController.AddBus (BusBookingApp)'
+2023-08-09 11:53:13.646 +05:30 [INF] Route matched with {action = "AddBus", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddBus() on controller BusBookingWeb.Controllers.AdminController (BusBookingApp).
+2023-08-09 11:53:13.676 +05:30 [INF] Executing ViewResult, running view AddBus.
+2023-08-09 11:53:13.780 +05:30 [INF] Executed ViewResult - view AddBus executed in 105.0224ms.
+2023-08-09 11:53:13.783 +05:30 [INF] Executed action BusBookingWeb.Controllers.AdminController.AddBus (BusBookingApp) in 131.65ms
+2023-08-09 11:53:13.787 +05:30 [INF] Executed endpoint 'BusBookingWeb.Controllers.AdminController.AddBus (BusBookingApp)'
+2023-08-09 11:53:13.791 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7128/Admin/AddBus - - - 200 - text/html;+charset=utf-8 153.1976ms
+2023-08-09 11:56:18.770 +05:30 [INF] Application is shutting down...
+2023-08-09 11:56:28.954 +05:30 [INF] User profile is available. Using 'C:\Users\devi_\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-09 11:56:29.270 +05:30 [INF] Now listening on: https://localhost:7128
+2023-08-09 11:56:29.273 +05:30 [INF] Now listening on: http://localhost:5105
+2023-08-09 11:56:29.282 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-09 11:56:29.285 +05:30 [INF] Hosting environment: Development
+2023-08-09 11:56:29.288 +05:30 [INF] Content root path: C:\Users\devi_\Desktop\BBS\BusBookingApp\
+2023-08-09 11:56:47.489 +05:30 [INF] Application is shutting down...
+2023-08-09 11:56:54.184 +05:30 [INF] User profile is available. Using 'C:\Users\devi_\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-09 11:56:54.597 +05:30 [INF] Now listening on: https://localhost:7128
+2023-08-09 11:56:54.599 +05:30 [INF] Now listening on: http://localhost:5105
+2023-08-09 11:56:54.608 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-09 11:56:54.611 +05:30 [INF] Hosting environment: Development
+2023-08-09 11:56:54.613 +05:30 [INF] Content root path: C:\Users\devi_\Desktop\BBS\BusBookingApp\
+2023-08-09 11:56:59.914 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7128/ - -
+2023-08-09 11:56:59.985 +05:30 [INF] Executing endpoint 'BusBookingApp.Controllers.HomeController.Index (BusBookingApp)'
+2023-08-09 11:57:00.066 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller BusBookingApp.Controllers.HomeController (BusBookingApp).
+2023-08-09 11:57:00.111 +05:30 [INF] Executing ViewResult, running view Index.
+2023-08-09 11:57:00.308 +05:30 [INF] Executed ViewResult - view Index executed in 208.4231ms.
+2023-08-09 11:57:00.318 +05:30 [INF] Executed action BusBookingApp.Controllers.HomeController.Index (BusBookingApp) in 244.72ms
+2023-08-09 11:57:00.321 +05:30 [INF] Executed endpoint 'BusBookingApp.Controllers.HomeController.Index (BusBookingApp)'
+2023-08-09 11:57:00.327 +05:30 [INF] Accessing expired session, Key:720148e0-25f6-07c9-54a5-966e2fc475c9
+2023-08-09 11:57:00.341 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7128/ - - - 200 - text/html;+charset=utf-8 434.1222ms
+2023-08-09 11:57:03.756 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7128/Home/Login? - -
+2023-08-09 11:57:03.759 +05:30 [INF] Executing endpoint 'BusBookingApp.Controllers.HomeController.Login (BusBookingApp)'
+2023-08-09 11:57:03.762 +05:30 [INF] Route matched with {action = "Login", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller BusBookingApp.Controllers.HomeController (BusBookingApp).
+2023-08-09 11:57:03.766 +05:30 [INF] Executing ViewResult, running view Login.
+2023-08-09 11:57:03.799 +05:30 [INF] Executed ViewResult - view Login executed in 33.6742ms.
+2023-08-09 11:57:03.801 +05:30 [INF] Executed action BusBookingApp.Controllers.HomeController.Login (BusBookingApp) in 36.6366ms
+2023-08-09 11:57:03.804 +05:30 [INF] Executed endpoint 'BusBookingApp.Controllers.HomeController.Login (BusBookingApp)'
+2023-08-09 11:57:03.807 +05:30 [INF] Accessing expired session, Key:720148e0-25f6-07c9-54a5-966e2fc475c9
+2023-08-09 11:57:03.809 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7128/Home/Login? - - - 200 - text/html;+charset=utf-8 52.8457ms
+2023-08-09 11:57:15.298 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7128/Client/loginuser application/x-www-form-urlencoded 218
+2023-08-09 11:57:15.301 +05:30 [INF] Executing endpoint 'ClientController.loginuser (BusBookingApp)'
+2023-08-09 11:57:15.303 +05:30 [INF] Route matched with {action = "loginuser", controller = "Client"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult loginuser() on controller ClientController (BusBookingApp).
+2023-08-09 11:57:15.442 +05:30 [INF] Accessing expired session, Key:720148e0-25f6-07c9-54a5-966e2fc475c9
+2023-08-09 11:57:15.446 +05:30 [INF] Executing RedirectResult, redirecting to /Admin/AddBus.
+2023-08-09 11:57:15.447 +05:30 [INF] Executed action ClientController.loginuser (BusBookingApp) in 141.663ms
+2023-08-09 11:57:15.448 +05:30 [INF] Executed endpoint 'ClientController.loginuser (BusBookingApp)'
+2023-08-09 11:57:15.454 +05:30 [INF] Session started; Key:720148e0-25f6-07c9-54a5-966e2fc475c9, Id:f42575dd-1179-7c5f-d764-e9c83ddd6b55
+2023-08-09 11:57:15.460 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7128/Client/loginuser application/x-www-form-urlencoded 218 - 302 0 - 162.4306ms
+2023-08-09 11:57:15.463 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7128/Admin/AddBus - -
+2023-08-09 11:57:15.464 +05:30 [INF] Executing endpoint 'BusBookingWeb.Controllers.AdminController.AddBus (BusBookingApp)'
+2023-08-09 11:57:15.466 +05:30 [INF] Route matched with {action = "AddBus", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddBus() on controller BusBookingWeb.Controllers.AdminController (BusBookingApp).
+2023-08-09 11:57:15.478 +05:30 [INF] Executing ViewResult, running view AddBus.
+2023-08-09 11:57:15.528 +05:30 [INF] Executed ViewResult - view AddBus executed in 51.5187ms.
+2023-08-09 11:57:15.532 +05:30 [INF] Executed action BusBookingWeb.Controllers.AdminController.AddBus (BusBookingApp) in 63.1825ms
+2023-08-09 11:57:15.534 +05:30 [INF] Executed endpoint 'BusBookingWeb.Controllers.AdminController.AddBus (BusBookingApp)'
+2023-08-09 11:57:15.536 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7128/Admin/AddBus - - - 200 - text/html;+charset=utf-8 73.1499ms
+2023-08-09 11:58:28.468 +05:30 [INF] Application is shutting down...
+2023-08-09 11:58:49.028 +05:30 [INF] User profile is available. Using 'C:\Users\devi_\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2023-08-09 11:58:49.296 +05:30 [INF] Now listening on: https://localhost:7128
+2023-08-09 11:58:49.296 +05:30 [INF] Now listening on: http://localhost:5105
+2023-08-09 11:58:49.305 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2023-08-09 11:58:49.306 +05:30 [INF] Hosting environment: Development
+2023-08-09 11:58:49.306 +05:30 [INF] Content root path: C:\Users\devi_\Desktop\BBS\BusBookingApp\
+2023-08-09 11:58:50.376 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7128/ - -
+2023-08-09 11:58:50.539 +05:30 [INF] Executing endpoint 'BusBookingApp.Controllers.HomeController.Index (BusBookingApp)'
+2023-08-09 11:58:50.606 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller BusBookingApp.Controllers.HomeController (BusBookingApp).
+2023-08-09 11:58:50.632 +05:30 [INF] Executing ViewResult, running view Index.
+2023-08-09 11:58:50.853 +05:30 [INF] Executed ViewResult - view Index executed in 227.202ms.
+2023-08-09 11:58:50.860 +05:30 [INF] Executed action BusBookingApp.Controllers.HomeController.Index (BusBookingApp) in 252.6096ms
+2023-08-09 11:58:50.861 +05:30 [INF] Executed endpoint 'BusBookingApp.Controllers.HomeController.Index (BusBookingApp)'
+2023-08-09 11:58:50.865 +05:30 [INF] Accessing expired session, Key:720148e0-25f6-07c9-54a5-966e2fc475c9
+2023-08-09 11:58:50.874 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7128/_framework/aspnetcore-browser-refresh.js - -
+2023-08-09 11:58:50.883 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7128/ - - - 200 - text/html;+charset=utf-8 518.7207ms
+2023-08-09 11:58:50.901 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7128/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 27.0368ms
+2023-08-09 11:58:52.343 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7128/Home/Login? - -
+2023-08-09 11:58:52.346 +05:30 [INF] Executing endpoint 'BusBookingApp.Controllers.HomeController.Login (BusBookingApp)'
+2023-08-09 11:58:52.348 +05:30 [INF] Route matched with {action = "Login", controller = "Home"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller BusBookingApp.Controllers.HomeController (BusBookingApp).
+2023-08-09 11:58:52.352 +05:30 [INF] Executing ViewResult, running view Login.
+2023-08-09 11:58:52.451 +05:30 [INF] Executed ViewResult - view Login executed in 101.1999ms.
+2023-08-09 11:58:52.451 +05:30 [INF] Executed action BusBookingApp.Controllers.HomeController.Login (BusBookingApp) in 102.2122ms
+2023-08-09 11:58:52.451 +05:30 [INF] Executed endpoint 'BusBookingApp.Controllers.HomeController.Login (BusBookingApp)'
+2023-08-09 11:58:52.451 +05:30 [INF] Accessing expired session, Key:720148e0-25f6-07c9-54a5-966e2fc475c9
+2023-08-09 11:58:52.452 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7128/Home/Login? - - - 200 - text/html;+charset=utf-8 109.2463ms
+2023-08-09 11:58:52.493 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7128/_framework/aspnetcore-browser-refresh.js - -
+2023-08-09 11:58:52.494 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7128/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 1.0388ms
+2023-08-09 11:58:57.823 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7128/Client/loginuser application/x-www-form-urlencoded 218
+2023-08-09 11:58:57.826 +05:30 [INF] Executing endpoint 'ClientController.loginuser (BusBookingApp)'
+2023-08-09 11:58:57.828 +05:30 [INF] Route matched with {action = "loginuser", controller = "Client"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult loginuser() on controller ClientController (BusBookingApp).
+2023-08-09 11:58:58.077 +05:30 [INF] Accessing expired session, Key:720148e0-25f6-07c9-54a5-966e2fc475c9
+2023-08-09 11:58:58.080 +05:30 [INF] Executing RedirectResult, redirecting to /Admin/AddBus.
+2023-08-09 11:58:58.080 +05:30 [INF] Executed action ClientController.loginuser (BusBookingApp) in 251.5617ms
+2023-08-09 11:58:58.080 +05:30 [INF] Executed endpoint 'ClientController.loginuser (BusBookingApp)'
+2023-08-09 11:58:58.089 +05:30 [INF] Session started; Key:720148e0-25f6-07c9-54a5-966e2fc475c9, Id:74dad088-fb33-b4cd-385f-ca99b5eb5b0e
+2023-08-09 11:58:58.095 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7128/Client/loginuser application/x-www-form-urlencoded 218 - 302 0 - 271.8758ms
+2023-08-09 11:58:58.099 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7128/Admin/AddBus - -
+2023-08-09 11:58:58.100 +05:30 [INF] Executing endpoint 'BusBookingWeb.Controllers.AdminController.AddBus (BusBookingApp)'
+2023-08-09 11:58:58.103 +05:30 [INF] Route matched with {action = "AddBus", controller = "Admin"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult AddBus() on controller BusBookingWeb.Controllers.AdminController (BusBookingApp).
+2023-08-09 11:58:58.124 +05:30 [INF] Executing ViewResult, running view AddBus.
+2023-08-09 11:58:58.216 +05:30 [INF] Executed ViewResult - view AddBus executed in 92.7441ms.
+2023-08-09 11:58:58.216 +05:30 [INF] Executed action BusBookingWeb.Controllers.AdminController.AddBus (BusBookingApp) in 113.5271ms
+2023-08-09 11:58:58.217 +05:30 [INF] Executed endpoint 'BusBookingWeb.Controllers.AdminController.AddBus (BusBookingApp)'
+2023-08-09 11:58:58.218 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7128/Admin/AddBus - - - 200 - text/html;+charset=utf-8 119.2730ms
+2023-08-09 11:58:58.241 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7128/_framework/aspnetcore-browser-refresh.js - -
+2023-08-09 11:58:58.242 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7128/_framework/aspnetcore-browser-refresh.js - - - 200 11966 application/javascript;+charset=utf-8 0.7519ms
+2023-08-09 11:59:48.640 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7128/_framework/clear-browser-cache - -
+2023-08-09 11:59:48.644 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7128/_framework/clear-browser-cache - - - 200 0 - 4.3902ms
+2023-08-09 11:59:48.774 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7128/_framework/clear-browser-cache - -
+2023-08-09 11:59:48.775 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7128/_framework/clear-browser-cache - - - 200 0 - 0.2729ms
+2023-08-09 11:59:48.853 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7128/_framework/clear-browser-cache - -
+2023-08-09 11:59:48.854 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7128/_framework/clear-browser-cache - - - 200 0 - 0.8091ms
+2023-08-09 11:59:53.665 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7128/css/Addbus.css?nonce=1691562593625 - -
+2023-08-09 11:59:53.756 +05:30 [INF] Sending file. Request path: '/css/Addbus.css'. Physical path: 'C:\Users\devi_\Desktop\BBS\BusBookingApp\wwwroot\css\Addbus.css'
+2023-08-09 11:59:53.756 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7128/css/Addbus.css?nonce=1691562593625 - - - 200 2360 text/css 90.4652ms
+2023-08-09 11:59:53.964 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7128/css/Addbus.css?nonce=1691562593961 - -
+2023-08-09 11:59:53.965 +05:30 [INF] Sending file. Request path: '/css/Addbus.css'. Physical path: 'C:\Users\devi_\Desktop\BBS\BusBookingApp\wwwroot\css\Addbus.css'
+2023-08-09 11:59:53.965 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7128/css/Addbus.css?nonce=1691562593961 - - - 200 2360 text/css 0.8610ms
+2023-08-09 12:08:24.272 +05:30 [INF] Application is shutting down...
